@@ -1,0 +1,127 @@
+.de URL
+\\$2 \(laURL: \\$1 \(ra\\$3
+..
+.if \n[.g] .mso www.tmac
+.TH REDO-WHICHDO 1
+.SH NAME
+redo-whichdo \- print search paths for dofiles to build a
+.I redo
+target
+.SH SYNOPSIS
+.B redo-whichdo
+.I target
+.SH DESCRIPTION
+.I redo(1)
+is a tool for building files and for rebuilding them if any of their dependencies have changed.
+.I redo-whichdo
+prints all dofiles that
+.I redo(1)
+will look for to build the target.
+If the exit code of
+.I redo-whichdo
+indicates success, the last filename is the filename of the dofile that
+.I redo(1)
+will actually use to build the target.
+.PP
+.I redo-whichdo
+prints the filename for a dofile that
+.I redo(1)
+could use to build the target.
+If the dofile exists,
+.I redo-whichdo
+exits with a status code indicating success.
+If the dofile does not exist,
+.I redo-whichdo
+either repeats the previous action with a fallback filename or exits with a status code indicating error if
+.I redo-whichdo
+can not find a dofile to build the target.
+.PP
+If standard output is a terminal,
+.I redo-whichdo
+separates filenames by newline characters. Otherwise,
+.I redo-whichdo
+separates filenames by null characters.
+Shell scripts that act on the output of
+.I redo-whichdo
+can pipe it to
+.I xargs(1)
+invoked with the
+.B -0
+option to handle the filenames.
+.SH EXAMPLES
+.PP
+Consider a root directory containing only the three dofiles
+.IR a.do ,
+.IR default.b.do ,
+.IR default.c.do ,
+and a folder
+.IR d .
+For the targets,
+.IR a ,
+.IR a.b ,
+and
+.IR a.b.c ,
+.IR d/a.b.c ,
+the output of
+.I redo-whichdo(1)
+would be these:
+.TP
+.I a
+.br
+/a.do
+.TP
+.I a.b
+.br
+/a.b.do
+.br
+/default.b.do
+.TP
+.I a.b.c
+.br
+/a.b.c.do
+.br
+/default.b.c.do
+.br
+/default.c.do
+.TP
+.I d/a.b.c
+.br
+/d/a.b.c.do
+.br
+/d/default.b.c.do
+.br
+/d/default.c.do
+.br
+/d/default.do
+.br
+/default.b.c.do
+.br
+/default.c.do
+.SH NOTES
+.PP
+A dofile used to build a target is a dependency of that target:
+If
+.I redo(1)
+determines that the dofile used to build a target has changed, the target will be rebuilt.
+.PP
+All non-existent dofiles searched for while building a target are non-existence dependencies of that target:
+If
+.I redo(1)
+finds that a previously searched for non-existent dofile exists, the target will be rebuilt.
+.SH HISTORY
+.I redo-whichdo
+was designed by Avery Pennarun and Nils Dagsson Moskopp as part of Avery Pennarun's
+.I redo
+implementation and independently implemented by Nils Dagsson Moskopp.
+.SH AUTHOR
+.I redo-whichdo
+and this man page were written by Nils Dagsson Moskopp.
+.SH COPYRIGHT
+Copyright © 2018-2019 Nils Dagsson Moskopp.
+License AGPLv3+: GNU Affero GPL version 3 or later <http://www.gnu.org/licenses/agpl-3.0.html>.
+This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.
+.SH SEE ALSO
+.IR redo(1) ,
+.IR redo-ifchange(1) ,
+.IR redo-ifcreate(1) ,
+.IR redo-targets(1)

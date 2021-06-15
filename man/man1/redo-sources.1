@@ -1,0 +1,49 @@
+.de URL
+\\$2 \(laURL: \\$1 \(ra\\$3
+..
+.if \n[.g] .mso www.tmac
+.TH REDO-SOURCES 1
+.SH NAME
+redo-sources \- print list of
+.IR redo(1)
+sources
+.SH SYNOPSIS
+.B redo-sources
+.SH DESCRIPTION
+.IR redo(1)
+is a tool for building files and for rebuilding them if any of their dependencies have changed.
+.I redo-sources
+prints the list of
+.IR redo(1)
+sources in the current directory and its subdirectories that exist. A source is a file that has been listed as a dependency of another file using
+.IR redo-ifchange(1)
+but can not be built with
+.IR redo(1) .
+.PP
+Files that do not exist are not listed because they might not be sources anymore. For example, if you declare a dependency on a file using
+.IR redo-ifchange(1)
+and later remove the file and create a dofile to generate it, it will not be listed.
+.SH HISTORY
+.I redo-sources
+was designed by Avery Pennarun as part of his
+.I redo
+implementation and implemented by Nils Dagsson Moskopp.
+.SH AUTHOR
+.I redo-sources
+and this man page were written by Nils Dagsson Moskopp.
+.SH COPYRIGHT
+Copyright © 2014-2016 Nils Dagsson Moskopp.
+License AGPLv3+: GNU Affero GPL version 3 or later <http://www.gnu.org/licenses/agpl-3.0.html>.
+This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.
+.SH SEE ALSO
+.IR redo(1) ,
+.IR redo-always(1) ,
+.IR redo-dot(1) ,
+.IR redo-ifchange(1) ,
+.IR redo-ifcreate(1) ,
+.IR redo-ood(1) ,
+.IR redo-stamp(1) ,
+.IR redo-targets(1)
+.SH BUGS
+.I redo-sources
+may break if the target filename contains a tab or a newline.

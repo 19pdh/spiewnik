@@ -1,0 +1,116 @@
+#!/bin/sh -eu
+# redo – bourne shell implementation of DJB redo
+# Copyright © 2014-2021  Nils Dagsson Moskopp (erlehmann)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# Dieses Programm hat das Ziel, die Medienkompetenz der Leser zu
+# steigern. Gelegentlich packe ich sogar einen handfesten Buffer
+# Overflow oder eine Format String Vulnerability zwischen die anderen
+# Codezeilen und schreibe das auch nicht dran.
+
+: \
+ "${REDO_JOBS_MAX:=1}" \
+ "${REDO_MKDIR:=$(command -v mkdir)}" \
+ "${REDO_RM:=$(command -v rm) -f}" \
+ "${REDO_RMDIR:=$(command -v rmdir)}" \
+ "${REDO_TMP_DIR:=$(mktemp -d /tmp/redo.XXXXXXX)}" \
+
+export \
+ REDO_JOBS_MAX \
+ REDO_MKDIR \
+ REDO_RM \
+ REDO_RMDIR \
+ REDO_TMP_DIR \
+
+while [ $# != 0 ]; do
+ case "${1}" in
+  '-d'|'--debug')
+   export REDO_DEBUG='1'
+  ;;
+  '--debug-jobs')
+   export REDO_DEBUG_JOBS='1'
+  ;;
+  '--debug-locks')
+   export REDO_DEBUG_LOCKS='1'
+  ;;
+  '-h'|'--help')
+   printf >&2 \
+"Usage: redo [OPTIONS] [TARGETS...]
+
+  -d, --debug          print dependency checks as they happen
+      --debug-jobs     print messages about job management
+      --debug-locks    print messages about file locking
+  -h, --help           print usage instructions and exit
+  -j [n], --jobs [n]   execute at most [n] dofiles in parallel
+      --version        print version information and exit
+  -x, --xtrace         print commands as they are executed (variables expanded)
+
+Report bugs to <nils+redo@dieweltistgarnichtso.net>.
+"
+   exit 0
+  ;;
+  '-j'|'--jobs')
+   shift; REDO_JOBS_MAX=${1}
+  ;;
+  '--version')
+   printf >&2 \
+"redo 4.0.4
+Copyright © 2014-2021 Nils Dagsson Moskopp (erlehmann)
+
+License AGPLv3+: GNU Affero GPL version 3 or later <http://www.gnu.org/licenses/agpl-3.0.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+"
+   exit 0
+  ;;
+  '-x'|'--xtrace')
+   export REDO_XTRACE='1'
+  ;;
+  *)
+   REDO_HAS_TARGETS='1'
+   export REDO_TARGET=''
+   # If this is build directory, create .redo database directory.
+   case "${REDO_BASE:-}" in
+    '')
+     export REDO_DEPTH=""
+     export REDO_PID="${PPID}"
+     export REDO_BASE="${PWD}"
+     export REDO_DIR="$REDO_BASE/.redo"
+     [ -d "$REDO_DIR" ] || LANG=C "${REDO_MKDIR}" -p "$REDO_DIR"
+   esac
+   break
+  ;;
+ esac
+ shift
+done
+
+[ "${REDO_HAS_TARGETS:-}" = "1" ] || exec redo all
+
+case "${REDO_JOBS_PIPE:-}" in
+ '')
+  export REDO_JOBS_PIPE="${REDO_TMP_DIR}"/jobs_pipe
+  mkfifo "${REDO_JOBS_PIPE}"
+  exec 9<> "${REDO_JOBS_PIPE}"
+  >&9 seq $(( REDO_JOBS_MAX - 1 )) &
+ ;;
+esac
+
+set +e
+redo-ifchange "$@"
+EXITCODE=${?}
+set -e
+
+wait
+
+case ${#REDO_DEPTH} in
+ 0)
+  LANG=C ${REDO_RM} "${REDO_JOBS_PIPE}"
+  LANG=C ${REDO_RMDIR} "${REDO_TMP_DIR}"
+ ;;
+esac
+
+exit "${EXITCODE}"

@@ -1,0 +1,92 @@
+.de URL
+\\$2 \(laURL: \\$1 \(ra\\$3
+..
+.if \n[.g] .mso www.tmac
+.TH REDO-ALWAYS 1
+.SH NAME
+redo-always \- mark the current
+.I redo
+target as always needing to be rebuilt
+.SH SYNOPSIS
+.B redo-always
+.SH DESCRIPTION
+.IR redo(1)
+is a tool for building files and for rebuilding them if any of their dependencies have changed.
+.IR redo-always ,
+when invoked from a dofile, adds a dependency on the current target that is impossible to satisfy. The target will always be rebuilt if given as an argument to
+.IR redo-ifchange(1) .
+.SH EXAMPLES
+.PP
+Consider the following three dofiles
+.IR all.do ,
+.IR b.do
+and
+.IR c.do :
+.TP
+.I all.do
+.br
+#!/bin/sh
+.br
+redo-ifchange b
+.TP
+.I b.do
+.br
+#!/bin/sh
+.br
+redo-ifchange c
+.br
+sleep 1
+.br
+date +%s
+.TP
+.I c.do
+.br
+#!/bin/sh
+.br
+redo-always
+.br
+date +%s
+.PP
+Invoking
+.IR redo(1)
+in a directory with these three files will build a file named
+.I c
+containing a timestamp and a file named
+.I b
+containing a timestamp that is at least one second later. Both
+.I b
+and
+.I c
+will always be rebuilt when
+.IR redo(1)
+is invoked, as the default target
+.I all
+depends on
+.I b
+which in turn depends on
+.I c
+which has an impossible to satisfy dependency.
+.SH HISTORY
+.I redo-always
+was designed by Avery Pennarun as part of his
+.I redo
+implementation and implemented by Nils Dagsson Moskopp.
+.SH AUTHOR
+.I redo-always
+and this man page were written by Nils Dagsson Moskopp.
+.SH COPYRIGHT
+Copyright © 2014-2016 Nils Dagsson Moskopp.
+License AGPLv3+: GNU Affero GPL version 3 or later <http://www.gnu.org/licenses/agpl-3.0.html>.
+This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.
+.SH SEE ALSO
+.IR redo(1) ,
+.IR redo-dot(1) ,
+.IR redo-ifchange(1) ,
+.IR redo-ifcreate(1) ,
+.IR redo-ood(1) ,
+.IR redo-sources(1) ,
+.IR redo-stamp(1) ,
+.IR redo-targets(1)
+.SH BUGS
+.I redo-always
+may break if the target filename contains a tab or a newline.

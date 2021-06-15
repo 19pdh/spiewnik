@@ -1,0 +1,91 @@
+.de URL
+\\$2 \(laURL: \\$1 \(ra\\$3
+..
+.if \n[.g] .mso www.tmac
+.TH REDO-STAMP 1
+.SH NAME
+redo-stamp \- rebuild target files depending on data given on standard input
+.SH SYNOPSIS
+.RI [command]
+|
+.B redo-stamp
+.SH DESCRIPTION
+.IR redo(1)
+is a tool for building files and for rebuilding them if any of their dependencies have changed.
+.IR redo-stamp ,
+when invoked from a dofile, adds a dependency of the current
+.IR redo(1)
+target on the data given on standard input. If the data given on standard input to
+.IR redo-stamp
+has not changed since the last build, the current
+.IR redo(1)
+target is not rebuilt and marked as up to date. To ensure that
+.IR redo-stamp
+checks the current target's validity, one can use
+.IR redo-always(1)
+to mark the current target as always out of date.
+.SH EXAMPLES
+.PP
+Consider the following two files
+.IR all.do
+and
+.IR b.do :
+.TP
+.I all.do
+.br
+#!/bin/sh
+.br
+redo-ifchange b
+.TP
+.I b.do
+.br
+#!/bin/sh
+.br
+redo-always
+.br
+echo 'input a line of text:' >&2
+.br
+line | redo-stamp
+.br
+date +%s
+.PP
+Invoking
+.IR redo(1)
+in a directory with these files will build a file named
+.I b
+containing a timestamp. The next time
+.IR redo(1)
+is invoked, it will only rebuild
+.I b
+if the output of
+.IR line(1)
+changed since the last build. This can be verified by invoking 
+.IR redo(1)
+repeatedly and examining the timestamp
+.IR b
+after each invocation, then changing the input to
+.IR line(1) ,
+invoking
+.IR redo(1)
+again and examining the timestamp again.
+.SH HISTORY
+.I redo-stamp
+was designed by Avery Pennarun and implemented by Nils Dagsson Moskopp.
+.SH AUTHOR
+.I redo-stamp
+and this man page were written by Nils Dagsson Moskopp.
+.SH COPYRIGHT
+Copyright © 2014-2017 Nils Dagsson Moskopp.
+License AGPLv3+: GNU Affero GPL version 3 or later <http://www.gnu.org/licenses/agpl-3.0.html>.
+This is free software: you are free to create and redistribute it. There is NO WARRANTY, to the extent permitted by law.
+.SH SEE ALSO
+.IR redo(1) ,
+.IR redo-always(1) ,
+.IR redo-dot(1) ,
+.IR redo-ifchange(1) ,
+.IR redo-ifcreate(1) ,
+.IR redo-ood(1) ,
+.IR redo-sources(1) ,
+.IR redo-targets(1)
+.SH BUGS
+None so far.

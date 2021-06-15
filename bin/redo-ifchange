@@ -1,0 +1,540 @@
+#!/bin/sh -u
+# redo-ifchange – bourne shell implementation of DJB redo
+# Copyright © 2014-2021  Nils Dagsson Moskopp (erlehmann)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# Dieses Programm hat das Ziel, die Medienkompetenz der Leser zu
+# steigern. Gelegentlich packe ich sogar einen handfesten Buffer
+# Overflow oder eine Format String Vulnerability zwischen die anderen
+# Codezeilen und schreibe das auch nicht dran.
+
+: \
+ "${REDO_JOBS_MAX:=1}" \
+ "${REDO_MKDIR:=$(command -v mkdir)}" \
+ "${REDO_MV:=$(command -v mv)}" \
+ "${REDO_RM:=$(command -v rm) -f}" \
+ "${REDO_RMDIR:=$(command -v rmdir)}" \
+ "${REDO_SLEEP:=$(command -v sleep)}" \
+ "${REDO_TMP_DIR:=$(mktemp -d /tmp/redo.XXXXXXX)}" \
+ "${REDO_LOCKS_DIR:=${REDO_TMP_DIR}/locks}" \
+ "${REDO_CANARY:=${REDO_TMP_DIR}/canary}"
+
+export \
+ REDO_JOBS_MAX \
+ REDO_MKDIR \
+ REDO_MV \
+ REDO_RM \
+ REDO_RMDIR \
+ REDO_SLEEP \
+ REDO_TMP_DIR \
+ REDO_LOCKS_DIR \
+ REDO_CANARY
+
+case ${REDO_STAT:-} in
+ '')
+  if (LANG=C stat -c%Y "$0" >/dev/null 2>&1); then
+   REDO_STAT=$(command -v stat)
+  elif (LANG=C gstat -c%Y "$0" >/dev/null 2>&1); then
+   REDO_STAT=$(command -v gstat)
+  else
+   >&2 printf 'redo needs BusyBox stat(1), GNU stat(1) or gstat(1).
+'
+   exit 1
+  fi
+esac
+export REDO_STAT
+
+case ${REDO_MD5SUM:-} in
+ '')
+  if command -v md5sum >/dev/null && [ "$(LANG=C : | md5sum)" = "d41d8cd98f00b204e9800998ecf8427e  -" ]; then
+   REDO_MD5SUM=$(command -v md5sum)
+  elif command -v gmd5sum >/dev/null && [ "$(LANG=C : | gmd5sum)" = "d41d8cd98f00b204e9800998ecf8427e  -" ]; then
+   REDO_MD5SUM=$(command -v gmd5sum)
+  elif command -v openssl >/dev/null && [ "$(LANG=C : | openssl md5 -r)" = "d41d8cd98f00b204e9800998ecf8427e *stdin" ]; then
+   REDO_MD5SUM="$(command -v openssl) md5 -r"
+  elif command -v md5 >/dev/null && [ "$(LANG=C : | md5)" = "d41d8cd98f00b204e9800998ecf8427e" ]; then
+   REDO_MD5SUM="$(command -v md5)"
+  else
+   >&2 printf 'redo needs BusyBox md5sum(1), GNU md5sum(1) or gmd5sum(1), openssl(1) or md5(1).
+'
+   exit 1
+  fi
+esac
+export REDO_MD5SUM
+
+: \
+ "${REDO_BOLD:=}" \
+ "${REDO_PLAIN:=}" \
+ "${REDO_COLOR_SUCCESS:=}" \
+ "${REDO_COLOR_FAILURE:=}"
+
+case "${TERM:-dumb}" in
+ 'dumb')
+ ;;
+ *)
+  if LANG=C tty -s; then
+   : \
+    "${REDO_BOLD:=$(printf '\033[1m')}" \
+    "${REDO_PLAIN:=$(printf '\033[m')}" \
+    "${REDO_COLOR_SUCCESS:=$(printf '\033[36m')}" \
+    "${REDO_COLOR_FAILURE:=$(printf '\033[33m')}"
+  fi
+ ;;
+esac
+export \
+ REDO_BOLD \
+ REDO_PLAIN \
+ REDO_COLOR_SUCCESS \
+ REDO_COLOR_FAILURE
+
+_echo_debug_message() {
+ printf '%s' "$@" >&2
+}
+
+case ${REDO_DEBUG:-} in
+ 1) ;;
+ *) alias _echo_debug_message=:
+esac
+
+_echo_debug_jobs_message() {
+ printf '%s' "$@" >&2
+}
+
+case ${REDO_DEBUG_JOBS:-} in
+ 1) ;;
+ *) alias _echo_debug_jobs_message=:
+esac
+
+_echo_debug_locks_message() {
+ printf '%s' "$@" >&2
+}
+
+case ${REDO_DEBUG_LOCKS:-} in
+ 1) ;;
+ *) alias _echo_debug_locks_message=:
+esac
+
+_exit_if_canary_dead() {
+ if [ -e "${REDO_CANARY:-}" ]; then
+ printf "${REDO_COLOR_FAILURE}redo %s${REDO_BOLD}%s: canary detected, aborting.${REDO_PLAIN}\n" \
+  "${REDO_DEPTH:-}" "${target#$REDO_BASE/}" >&2
+  exit 1
+ fi
+}
+
+_kill_canary() {
+ [ -n "${REDO_CANARY:-}" ] && \
+  : >"${REDO_CANARY}"
+}
+
+_exit_sigint() {
+ printf "${REDO_COLOR_FAILURE}redo %s${REDO_BOLD}%s: received SIGINT.${REDO_PLAIN}\n" \
+  "${REDO_DEPTH:-}" "${target#$REDO_BASE/}" >&2
+ _kill_canary
+ exit 1
+}
+
+trap _exit_sigint INT
+
+_add_dependency() {
+ parent=$1 dependency=$2
+ # Do not record circular dependencies.
+ [ "$parent" = "$dependency" ] && exit 1
+ local base; _dirsplit "$parent"
+ [ -d "$REDO_DIR/$dir" ] || LANG=C "${REDO_MKDIR}" -p "$REDO_DIR/$dir"
+ ctime_md5sum=$(
+  LANG=C $REDO_STAT -c%Y "$dependency"
+  LANG=C $REDO_MD5SUM < "$dependency"
+ )
+ ctime=${ctime_md5sum%%'
+'*}
+ md5sum=${ctime_md5sum#*'
+'}
+ printf "%s\t${ctime}\t${md5sum}\n" "${dependency}" >> \
+  "$REDO_DIR"/"$parent".dependencies.tmp
+ local base; _dirsplit "$dependency"
+ [ -d "$REDO_DIR/$dir" ] || LANG=C "${REDO_MKDIR}" -p "$REDO_DIR/$dir"
+ printf "${md5sum}\n" >"$REDO_DIR/$dependency".md5sum
+}
+
+_lock_acquire() {
+ lock_name=${1}
+ lock_dir="${REDO_LOCKS_DIR}${lock_name}"
+ lock_tries=1
+ lock_wait_total=0
+ while LANG=C "${REDO_MKDIR}" -p "${lock_dir%/*}" && ! LANG=C "${REDO_MKDIR}" "${lock_dir}" >/dev/null 2>&1; do
+  _exit_if_canary_dead
+  _echo_debug_locks_message "wait for lock	ppid: ${PPID}	tried: ${lock_tries}	waited: >${lock_wait_total}s	locked: ${lock_name}	target: ${REDO_TARGET}
+"
+  lock_wait=$(( PPID % ( REDO_JOBS_MAX + 1 ) + 1 )).$(( REDO_JOBS_MAX - 1 ))
+  _jobs_count_decrease "lock sleep"
+  LANG=C "${REDO_SLEEP}" "${lock_wait}"
+  _jobs_count_increase "lock awake"
+  lock_tries=$(( lock_tries + 1 ))
+  lock_wait_total=$(( lock_wait_total + ${lock_wait%.*} ))
+ done
+ _echo_debug_locks_message "acquired lock	ppid: ${PPID}	tried: ${lock_tries}	waited: >${lock_wait_total}s	locked: ${lock_name}	target: ${REDO_TARGET}
+"
+}
+
+_lock_release() {
+ lock_name=${1}
+ lock_dir="${REDO_LOCKS_DIR}${lock_name}"
+ _echo_debug_locks_message "release tried	ppid: ${PPID}	tried: 1	waited: ~0s	locked: ${lock_name}	target: ${REDO_TARGET}
+"
+ LANG=C [ -d "${lock_dir}" ] && ${REDO_RMDIR} -p "${lock_dir}" >/dev/null 2>&1
+ _echo_debug_locks_message "released lock	ppid: ${PPID}	tried: 1	waited: ~0s	locked: ${lock_name}	target: ${REDO_TARGET}
+"
+}
+
+_jobs_count_increase() {
+ _echo_debug_jobs_message "job awaiting	reason: ${1}
+"
+ <&9 read -r _
+ _echo_debug_jobs_message "job starting	reason: ${1}
+"
+}
+
+_jobs_count_decrease() {
+ _echo_debug_jobs_message "job finished	reason: ${1}
+"
+ >&9 echo
+}
+
+case ${REDO_JOBS_MAX} in
+ 1)
+  alias \
+   _jobs_count_increase=: \
+   _jobs_count_decrease=:
+ ;;
+esac
+
+_dependencies_ne_uptodate() {
+ target=$1
+ # If no non-existence dependencies exist, they are by definition up to date.
+ if [ ! -s "$REDO_DIR/$target".dependencies_ne ]; then
+  _echo_debug_message "${target#$REDO_BASE/} has no non-existence dependencies.
+"
+  rv=0
+  return
+ fi
+ _echo_debug_message "${target#$REDO_BASE/} non-existence dependency check:
+"
+ exec 3< "$REDO_DIR/$target".dependencies_ne
+ while read -r dependency_ne <&3; do
+  _echo_debug_message "	${dependency_ne#$REDO_BASE/} should not exist "
+  # If a non-existence dependency exists, it is out of date.
+  # Dependencies, e.g. on default.do files may also be out of date.
+  # Naive implementation: Pretend target is not up to date and rebuild.
+  if [ -e "$dependency_ne" ]; then
+   _echo_debug_message "and exists.
+"
+   rv=1
+   return
+  fi
+  _echo_debug_message "and does not.
+"
+ done
+ exec 3>&-
+ _echo_debug_message "${target#$REDO_BASE/} non-existence dependencies up to date.
+"
+ rv=0
+ return
+}
+
+_target_uptodate() {
+ target=$1
+ # If a target is a top-level target, it is not up to date.
+ case "$REDO_TARGET" in
+  '') return 1
+ esac
+ # If a target does not exist, it is not up to date.
+ if [ ! -e "$target" ]; then
+  _echo_debug_message "$target does not exist.
+"
+  return 1
+ fi
+ [ ! -e "$REDO_DIR/$target".md5sum ] && return 1
+ _echo_debug_message "${target#$REDO_BASE/} ctime "
+ ctime_stored_actual="$(LANG=C $REDO_STAT -c%Y "$REDO_DIR/$target".md5sum "$target")"
+ ctime_stored=${ctime_stored_actual%%'
+'*}
+ ctime_actual=${ctime_stored_actual#*'
+'}
+ # faster [ $ctime_stored -ge $ctime_actual ]
+ case $(( ctime_stored - ctime_actual )) in
+  -*) ;;
+  *)
+   _echo_debug_message "unchanged.
+"
+   return 0
+  ;;
+ esac
+ _echo_debug_message "changed.
+"
+ _echo_debug_message "$target md5sum "
+ read -r md5sum_stored <"$REDO_DIR/$target".md5sum
+ IFS=' ' md5sum_actual="$(LANG=C $REDO_MD5SUM < "$target")"
+ IFS='
+	'
+ case $md5sum_stored in
+  $md5sum_actual)
+   _echo_debug_message "unchanged.
+"
+   # If stored md5sum of target matches actual md5sum, but stored
+   # ctime does not, redo needs to update stored ctime of target.
+   : >>"$REDO_DIR/$target".md5sum
+   return 0
+  esac
+ _echo_debug_message "changed.
+"
+ return 1
+}
+
+_dependencies_from_depfile() {
+ while read -r dependency ctime_stored md5sum_stored; do
+  printf "%s\n" "${dependency}"
+ done
+}
+
+_dependencies_uptodate() {
+ target=$1
+ target_depfile="$REDO_DIR/$target".dependencies
+ # If no dependencies exist, they are by definition up to date.
+ if [ ! -e "$target_depfile" ]; then
+  _echo_debug_message "	${target#$REDO_BASE/} has no dependencies.
+"
+  return 0
+ fi
+ _echo_debug_message "${target#$REDO_BASE/} dependency check:
+"
+ # If any dependency does not exist, the target is out of date.
+ IFS='
+	'
+ LANG=C $REDO_STAT -c%Y $(_dependencies_from_depfile <"$target_depfile") > \
+  "$target_depfile".ctimes 2>&- || return 1
+ exec 3< "$target_depfile".ctimes
+ exec 4< "$target_depfile"
+ while read -r ctime_actual <&3 && read -r dependency ctime_stored md5sum_stored <&4; do
+  # If a dependency of a dependency is out of date, the dependency is out of date.
+  if ( ! _dependencies_uptodate "$dependency" ); then
+   return 1
+  fi
+  # If the ctime of a dependency did not change, the dependency is up to date.
+  _echo_debug_message "	${dependency#$REDO_BASE/} ctime "
+  case $ctime_stored in
+   $ctime_actual)
+    _echo_debug_message "unchanged.
+"
+    continue
+  esac
+  # If the md5sum of a dependency did not change, the dependency is up to date.
+  _echo_debug_message "changed.
+	$dependency md5sum "
+  OLDIFS=$IFS
+  IFS=' ' md5sum_actual="$(LANG=C $REDO_MD5SUM < "$dependency")"
+  IFS=$OLDIFS
+  case $md5sum_stored in
+   $md5sum_actual)
+    _echo_debug_message "unchanged.
+"
+    continue
+  esac
+  # if both ctime and md5sum did change, the dependency is out of date.
+  _echo_debug_message "changed.
+"
+  return 1
+ done
+ exec 4>&-
+ exec 3>&-
+ _echo_debug_message "${target#$REDO_BASE/} dependencies up to date.
+"
+ # If a non-existence dependency is out of date, the target is out of date.
+ _dependencies_ne_uptodate "$target"
+ return $rv
+}
+
+_dirsplit() {
+ base=${1##*/}
+ dir=${1%"$base"}
+}
+
+_do() {
+ local dir="$1" target="$2" tmp="$3"
+ target_abspath="${PWD%/}/$target"
+ target_relpath="${target_abspath#$REDO_BASE/}"
+ # If target is not up to date or its dependencies are not up to date, build it.
+ if (
+  ! _target_uptodate "$target_abspath" || \
+  ! _dependencies_uptodate "$target_abspath"
+ ); then
+  dofile_abspath=$(
+   LANG=C redo-whichdo "${target_abspath}" \
+    |LANG=C xargs -0 \
+      sh -cu '
+dofile=${0}
+for arg; do dofile=${arg}; done
+test -e "${dofile}" && printf "%s" "${dofile}"
+'
+   )
+  ext=
+  case ${dofile_abspath} in
+   *default.*.do)
+    ext=${dofile_abspath%.do}
+    ext=.${ext#*default.}
+   ;;
+  esac
+  base=${target%$ext}
+  if [ -z "$dofile_abspath" ]; then
+   # If .do file does not exist and target exists, it is a source file.
+   if [ -e "$target_abspath" ]; then
+    _add_dependency "$REDO_TARGET" "$target_abspath"
+    # Remove dependencies and non-existence dependencies that the
+    # target file might have had. When a target that was built by
+    # redo has its dofile removed, it becomes a source file and
+    # should not be rebuilt constantly due to a missing dofile.
+    [ -e "$REDO_DIR/$target_abspath".dependencies ] && \
+     LANG=C $REDO_RM "$REDO_DIR/$target_abspath".dependencies >&2
+    [ -e "$REDO_DIR/$target_abspath".dependencies_ne ] && \
+     LANG=C $REDO_RM "$REDO_DIR/$target_abspath".dependencies_ne >&2
+    return 0
+   # If .do file does not exist and target does not exist, stop.
+   else
+    printf "${REDO_COLOR_FAILURE}redo %s${REDO_BOLD}%s: no .do file.${REDO_PLAIN}\n" \
+     "${REDO_DEPTH:-}" "${target_abspath#$REDO_BASE/}" >&2
+    exit 1
+   fi
+  fi
+  : ${REDO_DEPTH:=}
+  case ${#REDO_DEPTH} in
+   200)
+    printf "${REDO_COLOR_FAILURE}redo %s${REDO_BOLD}%s: Maximum recursion depth exceeded.${REDO_PLAIN}\n" \
+     "${REDO_DEPTH:-}" "${target_abspath#$REDO_BASE/}" >&2
+    exit 1
+  esac
+  printf '%sredo %s%s%s%s\n' \
+   "${REDO_COLOR_SUCCESS}" "$REDO_DEPTH" "${REDO_BOLD}" "$target_relpath" "${REDO_PLAIN}" >&2
+  ( _run_dofile "$target" "${base##*/}" "$tmp.tmp" )
+  rv="$?"
+  # Add non existing .do file to non-existence dependencies so
+  # target is built when .do file in question is created.
+  LANG=C redo-whichdo "${target}" \
+   |LANG=C REDO_TARGET=${target_abspath} xargs -0 redo-ifcreate 2>/dev/null
+  # Add .do file to dependencies so target is built when .do file changes.
+  _add_dependency "$target_abspath" "${dofile_abspath}"
+  # Exit code 123 conveys that target was considered up to date at runtime.
+  case ${rv} in
+   0) ;;
+   123)
+    LANG=C $REDO_RM ./"$tmp.tmp" ./"$tmp.tmp2"
+   ;;
+   *)
+    LANG=C $REDO_RM ./"$tmp.tmp" ./"$tmp.tmp2"
+    printf "${REDO_COLOR_FAILURE}redo %s${REDO_BOLD}%s: got exit code %s.${REDO_PLAIN}\n" \
+     "$REDO_DEPTH" "${target_abspath#$REDO_BASE/}" "$rv" >&2
+    exit 1
+   ;;
+  esac
+  if [ -s "$tmp.tmp" ]; then
+   LANG=C "$REDO_MV" ./"$tmp.tmp" ./"$target" 2>&-
+  elif [ -s "$tmp.tmp2" ]; then
+   LANG=C "$REDO_MV" ./"$tmp.tmp2" ./"$target" 2>&-
+  fi
+  [ -e "$tmp.tmp2" ] && LANG=C $REDO_RM ./"$tmp.tmp2"
+  # After build is finished, update dependencies.
+  : >> "$REDO_DIR/$target_abspath".dependencies.tmp
+  : >> "$REDO_DIR/$target_abspath".dependencies_ne.tmp
+  LANG=C "$REDO_MV" "$REDO_DIR/$target_abspath".dependencies.tmp \
+   "$REDO_DIR/$target_abspath".dependencies >&2
+  LANG=C "$REDO_MV" "$REDO_DIR/$target_abspath".dependencies_ne.tmp \
+   "$REDO_DIR/$target_abspath".dependencies_ne >&2
+ fi
+ # Some do files (like all.do) do not usually generate output.
+ if [ -e "$target_abspath" ]; then
+  # Record dependency on parent target.
+  if [ -n "$REDO_TARGET" ]; then
+   _add_dependency "$REDO_TARGET" "$target_abspath"
+  else
+   local base; _dirsplit "$target_abspath"
+   [ -d "$REDO_DIR/$dir" ] || LANG=C "${REDO_MKDIR}" -p "$REDO_DIR/$dir"
+   LANG=C $REDO_MD5SUM <"$target_abspath" > \
+    "$REDO_DIR/$target_abspath".md5sum
+  fi
+ fi
+ _exit_if_canary_dead
+}
+
+_run_dofile() {
+ export REDO_DEPTH="$REDO_DEPTH  "
+ export REDO_TARGET="$PWD"/"$target"
+ local line1
+ set -e
+ read -r line1 <"${dofile_abspath}" || true
+ cmd=${line1#"#!"}
+ # If the first line of a do file does not have a hashbang (#!), use /bin/sh.
+ if [ "$cmd" = "$line1" ] || [ "$cmd" = "/bin/sh" ]; then
+  if [ "${REDO_XTRACE:-}" = "1" ]; then
+   cmd="/bin/sh -ex"
+  else
+   cmd="/bin/sh -e"
+  fi
+ fi
+ $cmd "${dofile_abspath}" "$@" >"$tmp.tmp2"
+}
+
+set +e
+if [ -n "${1:-}" ]; then
+ jobs_pids=""
+ _jobs_count_decrease "redo ${REDO_TARGET#${REDO_BASE}/}"
+ for target; do
+  # If relative path to target is given, convert to absolute absolute path.
+  case "$target" in
+   /*) ;;
+   *)  target="$PWD"/"$target" >&2
+  esac
+  _dirsplit "$target"
+  if [ "${REDO_JOBS_MAX}" -gt "1" ]; then
+    _exit_if_canary_dead
+    _jobs_count_increase "redo ${dir#$REDO_BASE/}${base}"
+    if [ -e "${target}" ] && ! [ -w "${target}" ]; then
+     # An existing file that can not be written to is a dependency. It
+     # does not have to be locked, as redo will never be able to write
+     # to it. No dofile is executed, but job count is still increased.
+     (
+      ( cd "$dir" && _do "$dir" "$base" "$base" )
+      [ "$?" = 0 ] || ( _kill_canary; exit 1 )
+      _jobs_count_decrease "done ${dir#$REDO_BASE/}${base}"
+     ) &
+     jobs_pids="${jobs_pids} $!"
+    else
+     # Any other target may require locks and dofile execution or not.
+     (
+      lock_name="${dir}${base}"
+      _lock_acquire "${lock_name}"
+      ( cd "$dir" && _do "$dir" "$base" "$base" )
+      [ "$?" = 0 ] || ( _kill_canary; exit 1 )
+      _lock_release "${lock_name}"
+      _jobs_count_decrease "done ${dir#$REDO_BASE/}${base}"
+     ) &
+     jobs_pids="${jobs_pids} $!"
+    fi
+  else
+   ( cd "$dir" && _do "$dir" "$base" "$base" )
+   [ "$?" = 0 ] || exit 1
+  fi
+ done
+ for pid in ${jobs_pids}; do
+  wait ${pid}
+  [ "$?" = 0 ] || exit 1
+ done
+ _exit_if_canary_dead
+
+ # This operation may briefly increase jobs count over the given
+ # maximum. This is not a bug, but a measure to prevent a hang of
+ # redo-ifchange before exit, which blocks a parent indefinitely.
+ _jobs_count_increase "done ${REDO_TARGET}" &
+fi

@@ -1,0 +1,94 @@
+.de URL
+\\$2 \(laURL: \\$1 \(ra\\$3
+..
+.if \n[.g] .mso www.tmac
+.TH REDO-IFCREATE 1
+.SH NAME
+redo-ifcreate \- rebuild target files when source files are created
+.SH SYNOPSIS
+.B redo-ifcreate
+.I target
+.RI [ target ]...
+.SH DESCRIPTION
+.IR redo(1)
+is a tool for building files and for rebuilding them if any of their dependencies have changed.
+.IR redo-ifcreate ,
+when invoked from a dofile, adds non-existence dependencies of the current
+.IR redo(1)
+target on all files given as arguments. This means that the current target will be rebuilt on invocation of
+.IR redo(1)
+if any of the files given as arguments to
+.IR redo-ifcreate
+exist. If an argument to
+.IR redo-ifcreate
+exists, it exits with a status code indicating failure.
+.SH EXAMPLES
+.PP
+Consider the following two files
+.IR all.do
+and
+.IR b.do :
+.TP
+.I all.do
+.br
+#!/bin/sh
+.br
+redo-ifchange b
+.TP
+.I b.do
+.br
+#!/bin/sh
+.br
+if [ ! -e c ]; then
+.br
+ redo-ifcreate c
+.br
+fi
+.br
+date +%s
+.PP
+Invoking
+.IR redo(1)
+in a directory with these files that does not contain a file named
+.I c
+will build a file named
+.I b
+containing a timestamp. The next time
+.IR redo(1)
+is invoked, it will only rebuild
+.I b
+if a file named
+.I c
+was created since the last build. This can be verified by invoking 
+.IR redo(1)
+repeatedly and examining the timestamp
+.IR b
+after each invocation, then creating a file named
+.IR c ,
+invoking
+.IR redo(1)
+again and examining the timestamp again.
+.SH HISTORY
+.I redo-ifcreate
+was designed by D. J. Bernstein and implemented by Nils Dagsson Moskopp.
+.TP
+.URL https://cr.yp.to/redo/honest-nonfile.html "Target files depend on nonexistent files" " by D. J. Bernstein"
+.SH AUTHOR
+.I redo-ifcreate
+and this man page were written by Nils Dagsson Moskopp.
+.SH COPYRIGHT
+Copyright © 2014-2016 Nils Dagsson Moskopp.
+License AGPLv3+: GNU Affero GPL version 3 or later <http://www.gnu.org/licenses/agpl-3.0.html>.
+This is free software: you are free to create and redistribute it. There is NO WARRANTY, to the extent permitted by law.
+.SH SEE ALSO
+.IR redo(1) ,
+.IR redo-always(1) ,
+.IR redo-dot(1) ,
+.IR redo-ifchange(1) ,
+.IR redo-ood(1) ,
+.IR redo-sources(1) ,
+.IR redo-stamp(1) ,
+.IR redo-targets(1)
+.SH BUGS
+.I redo-ifcreate
+may break if a source filename contains a tab or newline character.

@@ -1,0 +1,79 @@
+#!/bin/sh -eu
+# redo-whichdo – bourne shell implementation of DJB redo
+# Copyright © 2018-2019  Nils Dagsson Moskopp (erlehmann)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# Dieses Programm hat das Ziel, die Medienkompetenz der Leser zu
+# steigern. Gelegentlich packe ich sogar einen handfesten Buffer
+# Overflow oder eine Format String Vulnerability zwischen die anderen
+# Codezeilen und schreibe das auch nicht dran.
+
+case ${SEPARATOR:-} in
+ '') [ -t 1 ] && SEPARATOR='\n' || SEPARATOR='\0'
+esac
+
+alias print_filename="printf -- '%s${SEPARATOR}'"
+
+find_default_dofile() {
+ target_abspath=${1}
+ target_basename=${target_abspath##*/}
+ target_dirname=${target_abspath%"${target_basename}"}
+ dofile_candidate=default.${target_basename}.do
+ while :; do
+  dofile_candidate=default.${dofile_candidate#default.*.}
+  dofile_candidate_abspath="${PWD%/}/${dofile_candidate}"
+  case "${dofile_candidate_abspath}" in
+   "${target_abspath}")
+    # A file named “default.do” can not be its own dofile.
+   ;;
+   *)
+    print_filename "${dofile_candidate_abspath}"
+   ;;
+  esac
+
+  [ -f "${dofile_candidate}" ] || [ "${dofile_candidate}" = "default.do" ] && break
+ done
+}
+
+find_dofile() {
+ # BusyBox v.1.19.3 outputs nothing for “readlink -f” on a nonexistent
+ # file, which means that redo-whichdo can not canonicalize filenames.
+ case "${1}" in
+  /*) target_abspath="${1}" ;;
+  *) target_abspath="${PWD%/}/${1}" ;;
+ esac
+ target_basename=${target_abspath##*/}
+ target_dirname=${target_abspath%"${target_basename}"}
+
+ # Skip printing first guess for path names with the prefix “default”
+ # to prevent duplicate output.
+ case "${target_basename}" in
+  default)
+  ;;
+  default.*)
+  ;;
+  *)
+   dofile_candidate="$target_abspath".do
+   print_filename "${dofile_candidate}"
+   [ -f "${dofile_candidate}" ] && return
+  ;;
+ esac
+
+ cd "${target_dirname}"
+
+ while :; do
+  find_default_dofile "${target_abspath}"
+  [ -f "${dofile_candidate}" ] || [ "${PWD}" = "/" ] && break
+  cd ..
+ done
+
+ [ -f "${PWD%/}/${dofile_candidate}" ] || exit 1
+}
+
+for target; do
+ find_dofile "${target}"
+done

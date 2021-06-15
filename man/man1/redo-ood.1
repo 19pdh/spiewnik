@@ -1,0 +1,43 @@
+.de URL
+\\$2 \(laURL: \\$1 \(ra\\$3
+..
+.if \n[.g] .mso www.tmac
+.TH REDO-OOD 1
+.SH NAME
+redo-ood \- print list of
+.I redo
+targets that are out of date
+.SH SYNOPSIS
+.B redo-ood
+.SH DESCRIPTION
+.IR redo(1)
+is a tool for building files and for rebuilding them if any of their dependencies have changed.
+.I redo-ood
+prints the list of redo targets in the current directory and its subdirectories that exist and are out of date, i.e. files that would be rebuilt if given as an argument to
+.IR redo-ifchange(1) .
+.PP
+Files that do not exist are not listed because they might not be targets anymore. For example, if you build a file and later remove it and change the build to no longer generate it, it will not be listed.
+.SH HISTORY
+.I redo-ood
+was designed by Avery Pennarun as part of his
+.I redo
+implementation and implemented by Nils Dagsson Moskopp.
+.SH AUTHOR
+.I redo-ood
+and this man page were written by Nils Dagsson Moskopp.
+.SH COPYRIGHT
+Copyright © 2014-2016 Nils Dagsson Moskopp.
+License AGPLv3+: GNU Affero GPL version 3 or later <http://www.gnu.org/licenses/agpl-3.0.html>.
+This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.
+.SH SEE ALSO
+.IR redo(1) ,
+.IR redo-always(1) ,
+.IR redo-dot(1) ,
+.IR redo-ifchange(1) ,
+.IR redo-ifcreate(1) ,
+.IR redo-sources(1) ,
+.IR redo-stamp(1) ,
+.IR redo-targets(1)
+.SH BUGS
+.I redo-ood
+may break if the target filename contains a tab or a newline.
