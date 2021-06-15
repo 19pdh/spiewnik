@@ -1,9 +1,9 @@
 .\" Page setup
 .pl 8.27i
-.ps 12
-.nr PS 12
-.vs 10
-.nr VS 10
+.ps 11
+.nr PS 11
+.vs 9
+.nr VS 9
 .ll 4.83i
 .nr LL 4.83i
 .po 0.5i

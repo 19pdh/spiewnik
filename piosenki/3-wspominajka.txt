@@ -1,39 +1,24 @@
 .PIOSENKA Wspominajka
 
 Już niedługo nie starczy palcy u rąk,
-
 by policzyć obozy, na których już byłeś.
-
 Chociaż myślisz, że to wystarczy,
-
 innym razem, że chciałbyś tak wciąż.
-
 Dzisiaj przyda się poczynić mały bilans tych,
-
 niezapomnianych dni...
 
-
+.RS
 Mniejsza już o imiona jezior i wsi,
-
 każde z nich przypomina nastroje i twarze.
-
 Nie wiesz czemu pamiętasz motyla w słońcu,
-
 a nie to, jak wyglądały dni.
-
 Najpierw, gdy myślałes, że sznur szary najgorszy,
-
 potem, gdy chciałeś go mieć...
-
+.RE
 
 Lata biegną prędko, aż zapiera dech,
-
 granatowa chusta już prawie jest biała.
-
 Kiedy wspólne zmęczenie dawało przyjaźń,
-
 chciałeś, by zawsze było tak.
-
 I ten cud wciąż trwa, że tak różni ludzie
-
 wciąż ze sobą chcą być...
