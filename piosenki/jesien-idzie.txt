@@ -1,14 +1,14 @@
 .PIOSENKA "Jesień idzie"
 
-Raz staruszek, spacerując w lesie,
-Ujrzał listek przywiędły i blady
-I pomyślał: - Znowu idzie jesień,
-Jesień idzie, nie ma na to rady!
+Raz staruszek, spacerując w lesie, | a D7 a D7
+Ujrzał listek przywiędły i blady | a D7 E7
+I pomyślał: - Znowu idzie jesień, | a D7 a D7
+Jesień idzie, nie ma na to rady! | F E7 a D7
 
-I podreptał do chaty po dróżce,
-I oznajmił, stanąwszy przed chatą,
-Swojej żonie, tak samo staruszce:
-- Jesień idzie, nie ma rady na to!
+I podreptał do chaty po dróżce, | F G C a
+I oznajmił, stanąwszy przed chatą, | F G C a
+Swojej żonie, tak samo staruszce: | F G C a
+- Jesień idzie, nie ma rady na to! | F E7 a D7
 
 A staruszka zmartwiła się szczerze,
 Zamachnęła rękami obiema:

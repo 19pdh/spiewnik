@@ -1,16 +1,16 @@
 .PIOSENKA "Z deszczu słów kałuże dźwięków"
 
 .RS
-Z deszczu słów kałuże dźwięków
-Z deszczu dźwięków słów kałuże
-Słowa wypływają ze mnie
-A ja w dźwiękach je zanurzam
+Z deszczu słów kałuże dźwięków | D A
+Z deszczu dźwięków słów kałuże | h G
+Słowa wypływają ze mnie | D A
+A ja w dźwiękach je zanurzam | h G
 .RE
 
-Łatwo tęskni się się za słońcem
-Kiedy deszcz nam buty moczy
-Deszcz się lubi tylko kiedy
-Słońce razi prosto w oczy
+Łatwo tęskni się się za słońcem | h
+Kiedy deszcz nam buty moczy | G A
+Deszcz się lubi tylko kiedy | h
+Słońce razi prosto w oczy | G A/G A
 
 .RS
 Z deszczu słów kałuże dźwięków...

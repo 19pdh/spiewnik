@@ -1,15 +1,23 @@
 .PIOSENKA "Zielony płomień"
 
-W dąbrowy gęstym listowiu \^\^\^błyska zielona skra
-Trzepoce z wiatrem jak płomień mundur harcerski nasz
-Czapka troszeczkę na bakier dusza rogata w niej
-Wiatr polny w uszach i ptaki w pachnących włosach drzew
+W dąbrowy gęstym listowiu | a G a G7
+błyska zielona skra | C E a
+Trzepoce z wiatrem jak płomień | a G a G7
+mundur harcerski nasz | C G7 C G
+Czapka troszeczkę na bakier | C G7 a G7
+dusza rogata w niej | C G7 C E
+Wiatr polny w uszach i ptaki | a G a G7
+w pachnących włosach drzew | C E a
 
 .RS
-Tam gdzie się kończy horyzont leży nieznany ląd
-Ziemia jest trochę garbata więc go nie widać stąd
-Kreską przebiega błękitną strzępioną pasmem gór
-Żeglują ku tej granicy białe okręty chmur
+Tam gdzie się kończy horyzont
+leży nieznany ląd
+Ziemia jest trochę garbata
+więc go nie widać stąd
+Kreską przebiega błękitną
+strzępioną pasmem gór
+Żeglują ku tej granicy
+białe okręty chmur
 .RE
 
 Gdzie niskie niebo usypia na rosochatych pniach

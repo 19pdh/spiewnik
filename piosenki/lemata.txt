@@ -1,14 +1,14 @@
 .PIOSENKA "Łemata"
 
-Pamiętam, tylko tabun chmur się rozwinął
-I cichy wiatr wiejący ku połoninom
+Pamiętam, tylko tabun chmur się rozwinął | C G a e
+I cichy wiatr wiejący ku połoninom | F C G F G
 Jak kamień plecak twardy pod moją głową
 I czyjaś postać, co okazała się tobą
 
-        Idę dołem, a ty górą
-        Jestem słońcem, ty wichurą
-        Ogniem ja, wodą ty
-        Śmiechem ja, ty ronisz łzy
+        Idę dołem, a ty górą | C G
+        Jestem słońcem, ty wichurą | a e
+        Ogniem ja, wodą ty | F C
+        Śmiechem ja, ty ronisz łzy | G F G
 
 Byłaś jak słońce w tę zimną noc
 Jak wielkie szczęście, co zesłał mi los

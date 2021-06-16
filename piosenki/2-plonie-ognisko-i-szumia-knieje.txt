@@ -1,15 +1,15 @@
 .PIOSENKA "Płonie ognisko i szumią knieje"
 
-Płonie ognisko i szumią knieje
-Drużynowy jest wśród nas.
-Opowiada starodawne dzieje,
-Bohaterski wskrzesza czas.
+Płonie ognisko i szumią knieje | d A d
+Drużynowy jest wśród nas. | A A7 d A
+Opowiada starodawne dzieje, | d A d
+Bohaterski wskrzesza czas. | g A d C
 
 .RS
-O rycerstwie spod kresowych stanic,
-O obrońcach naszych polskich granic,
-A ponad nami wiatr szumny wieje,
-I dębowy huczy las.
+O rycerstwie spod kresowych stanic, | F C
+O obrońcach naszych polskich granic, | A7 d A
+A ponad nami wiatr szumny wieje, | d A d
+I dębowy huczy las. | g A7 d
 .RE
 
 Już do odwrotu głos trąbki wzywa,

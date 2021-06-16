@@ -1,7 +1,7 @@
 .PIOSENKA "Ostatnia kula"
 
-Zapadam w ciemność i las
-to moje życie, to mój dom
+Zapadam w ciemność i las | a d
+to moje życie, to mój dom | a E
 przyjaciel księżyc w porę zgasł
 mateczka noc okryła mgłą
 już nie mam dokąd uciec stąd
@@ -10,16 +10,16 @@ Domyka się obławy krąg
 do rana sam wykrwawię się.
 
 .RS
-Za to, że wolnym chciałem być
-ścigają mnie jak sfora psów
-ci co na smyczy wolą żyć
-i nie podniosą nigdy głów.
-Moja wolności nie znał cię
-żaden niewolnik, żaden pies.
-Dla nich obroża zwykła rzecz
-dla mojej szyi pętlą jest.
-Dla mej wolności...
-mojej wolności...
+Za to, że wolnym chciałem być | a F
+ścigają mnie jak sfora psów | C G
+ci co na smyczy wolą żyć | a F
+i nie podniosą nigdy głów. | C G
+Moja wolności nie znał cię | a F
+żaden niewolnik, żaden pies. | C G
+Obroża dla nich zwykła rzecz | a d
+dla mojej szyi pętlą jest. | C G
+Dla mej wolności... | a d
+mojej wolności... | a E
 .RE
 
 Tylu przyjaciół przeszło już

@@ -1,10 +1,9 @@
 .PIOSENKA "Jesień"
 
-Jesień już w polach mgła kosmata
-Jesień, zabrała resztki lata
-Zostawiła tylko na mych butach
-Szary kurz i trawy dróg
-Gdzie nikt nie wróci już
+Jesień już w polach mgła kosmata | G h C D
+Jesień, zabrała resztki lata | G h C D
+Zostawiła tylko na mych butach szary kurz | C H7 e C
+I trawy dróg, gdzie nikt nie wróci już | G C D
 
 Jesień, wiatr w połoninach śpiewa
 Jesień, pożółkły z żalu drzewa
@@ -13,10 +12,10 @@ Gdy nie wróci lato do mnie
 To na które czekam znów
 
 .RS
-Na to lato, które z wiatrem w polu gna
-Na to lato, co niebieskie oczy ma
-Na to lato, gdzie na przemian deszcz i skwar
-Na te noce, gdy ogniska gaśnie żar
+Na to lato, które z wiatrem w polu gna | C D G e
+Na to lato, co niebieskie oczy ma | C D G e
+Na to lato, gdzie na przemian deszcz i skwar | C D G e
+Na te noce, gdy ogniska gaśnie żar | C H7
 .RE
 
 Jesień, na dworze wiatr i słota

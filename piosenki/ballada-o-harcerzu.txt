@@ -1,7 +1,7 @@
 .PIOSENKA "Ballada o harcerzu"
 
-Właśnie tu na tej ziemi, młody harcerz meldował
-Swą gotowość umierać za Polskę.
+Właśnie tu na tej ziemi, młody harcerz meldował | G D
+Swą gotowość umierać za Polskę. | C G
 Tak jak ty niesiesz plecak, on niósł w ręku karabin,
 W sercu miłość nadzieje i troskę
 Może tu w Nowej Słupi, Daleszycach, Bielicach
@@ -10,10 +10,10 @@ Swą dziewczynę pożegnał nic nie wiedząc, że tylko
 Kilka dni życia mu przeznaczonych.
 
 .RS
-Naszej ziemi śpiewajmy, ziemi pokłon składajmy
-Taki prosty, serdeczny, harcerski.
-Niechaj echo poniesie tę balladę rajdową
-W nowe jutro i przyszłość nową.
+Naszej ziemi śpiewajmy, ziemi pokłon składajmy | G D
+Taki prosty, serdeczny, harcerski. | C D G
+Niechaj echo poniesie tę balladę rajdową | G D
+W nowe jutro i przyszłość nową. | C D G
 .RE
 
 Na pomniku wyryto, że 16 miał wiosen,

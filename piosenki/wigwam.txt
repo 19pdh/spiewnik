@@ -1,18 +1,18 @@
 .PIOSENKA "Wigwam"
 
-Gdy przewieją nas już wszystkie zimne wiatry
-Gdy przemoczą nas do nitki wszystkie deszcze
-Policzymy na swym ciele ślady prawdy
-Pomyślimy o spoczynku, ale jeszcze
+Gdy przewieją nas już wszystkie zimne wiatry | fis A
+Gdy przemoczą nas do nitki wszystkie deszcze | fis A
+Policzymy na swym ciele ślady prawdy | D A
+Pomyślimy o spoczynku, ale jeszcze | E D E
 
-        Zbudujmy wigwam,
-        A w nim rozpalmy ogień wieczny
-        Rozległy wigwam
-        Gdzie każdy będzie już bezpieczny
-        I śpiewać będzie z nami
-        Wolności wielką pieśń
-        Spróbujmy własnymi ręcami
-        Ogromny wigwam wznieść
+        Zbudujmy wigwam, | A
+        A w nim rozpalmy ogień wieczny | D E
+        Rozległy wigwam | A
+        Gdzie każdy będzie już bezpieczny | D E
+        I śpiewać będzie z nami | D E
+        Wolności wielką pieśń | A fis
+        Spróbujmy własnymi ręcami | D E
+        Ogromny wigwam wznieść | A D E A
 
 Gdy opuszczą nas już wszyscy przyjaciele
 I gdy nawet dobry Bóg zapomni o nas

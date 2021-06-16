@@ -1,7 +1,8 @@
 .PIOSENKA "Kantyczka z lotu ptaka"
 
-Patrz mój dobrotliwy Boże
-na swój ulubiony ludek,
+| kapo I
+Patrz mój dobrotliwy Boże | a C
+na swój ulubiony ludek, | G E7
 Jak wychodzi rano w zboże
 zginać harde karki z trudem.
 Patrz, jak schyla się nad pracą,
@@ -9,10 +10,8 @@ jak pokornie klęski znosi
 I nie pyta - Po co? Za co?
 Czasem o coś Cię poprosi:
 
-Ujmij trochę łaski nieba!
-Daj spokoju w zamian, chleba!
-Innym udziel swej miłości!
-Nam - sprawiedliwości!
+Ujmij trochę łaski nieba! Daj spokoju w zamian, chleba! | a E7 a C G
+Innym udziel swej miłości! Nam - sprawiedliwości! | E7 a F a e E7
 
 Smuć się, Chryste Panie w chmurze
 widząc, jak się naród bawi,

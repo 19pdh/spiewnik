@@ -1,14 +1,14 @@
 .PIOSENKA "Szara lilijka"
 
-Gdy zakochasz się w szarej lilijce
-I w świetlanym harcerskim krzyżu
+Gdy zakochasz się w szarej lilijce | a d
+I w świetlanym harcerskim krzyżu | E a
 Kiedy olśni cię blask ogniska
 Radę jedną ci dam
 
-        Załóż mundur i przypnij lilijkę
-        Czapkę na bakier włóż
-        W szeregu stań wśród harcerzy
-        I razem z nimi w świat rusz.
+        Załóż mundur i przypnij lilijkę | a d
+        Czapkę na bakier włóż | G C E
+        W szeregu stań wśród harcerzy | a d
+        I razem z nimi w świat rusz. | E a
 
 Razem z nimi będziesz wędrował
 Po Łysicy i Świętym Krzyżu

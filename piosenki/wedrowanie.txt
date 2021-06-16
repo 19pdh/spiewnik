@@ -1,15 +1,15 @@
 .PIOSENKA Wędrowanie
 
-Rozwichrzone nad głową sosny rosochate,
-Biegną niebem chmurki, owieczki skrzydlate,
-Senne oko jeziora, zda się, na wpół drzemie,
-Kolorowe sady słodkie niosą brzemię.
+Rozwichrzone nad głową sosny rosochate, | a d E a
+Biegną niebem chmurki, owieczki skrzydlate, | a d G C
+Senne oko jeziora, zda się, na wpół drzemie, | C d G C E
+Kolorowe sady słodkie niosą brzemię. | a d E a
 
 .RS
-A nam czegóż to więcej potrzeba?
-Po \(em wiedz nam!
-Powiedz nam lesie i drogo piaszczysta,
-Powiedz, powiedz, nam. (bis)
+A nam czegóż to więcej potrzeba? | C G F C
+Po \(em wiedz nam! | a E a
+Powiedz nam lesie i drogo piaszczysta, | C G F C
+Powiedz, powiedz, nam. (bis) | a E a
 .RE
 
 Połoniny zielone, przepastne doliny,

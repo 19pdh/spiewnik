@@ -1,11 +1,11 @@
 .PIOSENKA "Kaszubskie noce"
 
-Kaszubskie noce nad nami śniące,
-harcerski krąg, ogniska blask
+Kaszubskie noce nad nami śniące, | C G
+harcerski krąg, ogniska blask | d G
 Gdy się tu znajdziesz, wtedy zrozumiesz,
 że wszystko to łączy nas
 
-           To szumi las, kołysze drzewa
+           To szumi las, kołysze drzewa | C G d G
            Fala jeziora brzegi zalewa
            Tu mały Giewont czoło pochyla
            A my siedzimy, harcerska brać

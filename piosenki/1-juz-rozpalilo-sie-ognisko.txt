@@ -1,18 +1,18 @@
 .PIOSENKA "Już rozpaliło się ognisko"
 
-Już rozpaliło się ognisko
-Dając nam dobrej wróżby znak
-Siedliśmy przy nim wszyscy blisko
-Bo w całej Polsce siedzą tak
+Już rozpaliło się ognisko | C
+Dając nam dobrej wróżby znak | C G
+Siedliśmy przy nim wszyscy blisko | G
+Bo w całej Polsce siedzą tak | G7 C C7
 
 .RS
-Siedzą harcerze przy płomieniach
-Ciepły blask ognia skupia ich
-Wszystko, co złe, to szuka cienia
-Do światła dobro garnie się
+Siedzą harcerze przy płomieniach | F
+Ciepły blask ognia skupia ich | G C G
+Wszystko, co złe, to szuka cienia | C
+Do światła dobro garnie się | G C
 .RE
 
-Mówiłeś, druhu komendancie,
+Mówiłeś, druhu komendancie
 Że zaufanie do nas masz
 Że wierzysz w nasze szczere chęci
 Wszak ty harcerskie serca znasz

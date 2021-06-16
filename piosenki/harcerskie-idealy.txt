@@ -1,6 +1,6 @@
 .PIOSENKA "Harcerskie ideały"
 
-Na ścianie masz kolekcje swoich barwnych wspomnień,
+Na ścianie masz kolekcje swoich barwnych wspomnień, | D A e
 Suszony kwiat, naszyjnik, wiersz i liść.
 Już tyle lat przypinasz szpilką na tej słomie,
 To wszystko co cenniejsze jest niż skarb.
@@ -9,7 +9,7 @@ Rzeźbiony w drewnie, lilijki smukły kształt.
 Jest krzyża znak i orzeł biały jest w Koronie,
 A zaraz pod nim harcerskich dziesięć praw.
 
-Ramię pręż, słabość krusz,
+Ramię pręż, słabość krusz, | D A e h
 I nie zawiedź w potrzebie.
 Podaj swą pomocną dłoń,
 Tym co liczą na ciebie,
@@ -18,7 +18,7 @@ Sprawiedliwy i odważny,
 Śmiało zwalczaj wszelkie zło,
 Niech twym bratem będzie każdy.
 
-        I świeć przykładem świeć,
+        I świeć przykładem świeć, | G A D
         I leć w przestworza leć,
         I nieś ze sobą wieść,
         Że być harcerzem chcesz.

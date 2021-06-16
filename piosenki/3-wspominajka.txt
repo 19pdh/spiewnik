@@ -1,11 +1,11 @@
 .PIOSENKA Wspominajka
 
-Już niedługo nie starczy palcy u rąk,
-by policzyć obozy, na których już byłeś.
-Chociaż myślisz, że to wystarczy,
-innym razem, że chciałbyś tak wciąż.
-Dzisiaj przyda się poczynić mały bilans tych,
-niezapomnianych dni...
+Już niedługo nie starczy palcy u rąk, | C F
+by policzyć obozy, na których już byłeś. | a G
+Chociaż myślisz, że to wystarczy, | a e
+innym razem, że chciałbyś tak wciąż. | F G
+Dzisiaj przyda się poczynić mały bilans tych, | a e
+niezapomnianych dni... | F G
 
 .RS
 Mniejsza już o imiona jezior i wsi,

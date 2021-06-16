@@ -1,14 +1,14 @@
 .PIOSENKA "Komendant"
 
-Na polanie dogasa ognisko
-Cicho w locie srebrzyste mrą skry
-Gwiazdy zgasły poranek już blisko
-A ty śnisz tęczowe sny.
+Na polanie dogasa ognisko | d
+Cicho w locie srebrzyste mrą skry | A7
+Gwiazdy zgasły poranek już blisko | d g
+A ty śnisz tęczowe sny. | A7 d
 
-        Wśród zygzaków złocistych strumienia
-        Co tak jasno dziś złocą twą twarz,
-        Jawią Ci się twe twórcze marzenia
-        Komendancie wodzu nasz.
+        Wśród zygzaków złocistych strumienia | C F
+        Co tak jasno dziś złocą twą twarz, | C F a
+        Jawią Ci się twe twórcze marzenia | d g
+        Komendancie wodzu nasz. | A7 d
 
 Nikt Ci nie dał złocistych odznaczeń
 Taki skromny harcerski masz strój.

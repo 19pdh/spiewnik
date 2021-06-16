@@ -1,15 +1,15 @@
 .PIOSENKA "Hiszpańskie dziewczyny"
 
-Żegnajcie nam dziś, hiszpańskie dziewczyny
-Żegnajcie nam dziś, marzenia ze snów
-Ku brzegom angielskim już ruszać nam pora
-Lecz kiedyś na pewno wrócimy tu znów
+Żegnajcie nam dziś, hiszpańskie dziewczyny | e C h
+Żegnajcie nam dziś, marzenia ze snów | e G D
+Ku brzegom angielskim już ruszać nam pora | C D e
+Lecz kiedyś na pewno wrócimy tu znów | C h e
 
 .RS
-I smak waszych ust, hiszpańskie dziewczyny
-W noc ciemną i złą nam będzie się śnił
-Leniwie popłyną znów rejsu godziny
-Wspomnienie ust waszych przysporzy nam sił
+I smak waszych ust, hiszpańskie dziewczyny | e C D
+W noc ciemną i złą nam będzie się śnił | e G D
+Leniwie popłyną znów rejsu godziny | C D e
+Wspomnienie ust waszych przysporzy nam sił | C h e
 .RE
 
 Niedługo ujrzymy znów w dali Cap Deadman

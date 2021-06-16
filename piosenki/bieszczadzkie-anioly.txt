@@ -1,13 +1,13 @@
 .PIOSENKA "Bieszczadzkie anioły"
 
-Anioły są takie ciche
-Zwłaszcza te w Bieszczadach
-Gdy spotkasz takiego w górach
-Wiele z nim nie pogadasz
-Najwyżej na ucho ci powie
-Gdy będzie w dobrym humorze
-Że skrzydła nosi w plecaku
-Nawet przy dobrej pogodzie
+Anioły są takie ciche | a
+Zwłaszcza te w Bieszczadach | G
+Gdy spotkasz takiego w górach | a
+Wiele z nim nie pogadasz | e
+Najwyżej na ucho ci powie | C G
+Gdy będzie w dobrym humorze | C F
+Że skrzydła nosi w plecaku | C G
+Nawet przy dobrej pogodzie | a e a
 
 Anioły są całe zielone
 Zwłaszcza te w Bieszczadach
@@ -19,10 +19,10 @@ Zielone mają pojęcie
 A nawet zielony kielonek
 
 .RS
-Anioły bieszczadzkie, bieszczadzkie anioły
-Dużo w Was radości i dobrej pogody
-Bieszczadzkie anioły, anioły bieszczadzkie
-Gdy skrzydłem Cię dotkną już jesteś ich bratem
+Anioły bieszczadzkie, bieszczadzkie anioły | C G a
+Dużo w Was radości i dobrej pogody | C G a
+Bieszczadzkie anioły, anioły bieszczadzkie | C G a
+Gdy skrzydłem Cię dotkną już jesteś ich bratem | C G a
 .RE
 
 Anioły są całkiem samotne

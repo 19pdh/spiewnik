@@ -1,19 +1,19 @@
 .PIOSENKA "Pieśń wielorybników"
 
-Nasz "Diament" prawie gotów już
-W cieśninach nie ma kry
-Na kei piękne panny stoją
-W oczach błyszczą łzy.
+Nasz “Diament” prawie gotów już | a e
+W cieśninach nie ma kry | a e
+Na kei piękne panny stoją | a e
+W oczach błyszczą łzy. | F G a
 
 Kapitan w niebo wlepia wzrok
 Ruszamy lada dzień
 Płyniemy tam gdzie słońca blask
 Nie mąci nocy cień.
 
-        A więc krzycz oho
-        Odwagę w sercu miej
-        Wielorybów cielska groźne są
-        Lecz dostaniemy je.
+        A więc krzycz oho | a e a
+        Odwagę w sercu miej | a e a
+        Wielorybów cielska groźne są | a e C G
+        Lecz dostaniemy je. | a e a
 
 Ej panno - po co łzy
 Nic nie zatrzyma mnie
@@ -39,7 +39,7 @@ I ciągaj brachu ciąg.
 
         A więc krzycz oho...
 
-I na wieloryba już
-Ostatni to dzień
-Bo śmiały harpunnik
+I na wieloryba już | a G a
+Ostatni to dzień | G a
+Bo śmiały harpunnik | d
 Uderza weń.

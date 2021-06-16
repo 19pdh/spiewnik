@@ -1,12 +1,12 @@
 .PIOSENKA "Hej przyjaciele"
 
-Tam dokąd chciałem już nie dojdę szkoda zdzierać nóg.
+Tam dokąd chciałem już nie dojdę szkoda zdzierać nóg. | C G F C
 Już wędrówki naszej wspólnej nadchodzi kres.
 Wy pójdziecie inną drogą, zostawicie mnie.
 Odejdziecie, sam zostanę na rozstaju dróg.
 
 .RS
-Hej, przyjaciele! Zostańcie ze mną.
+Hej, przyjaciele! Zostańcie ze mną. | C G F C
 Przecież wszystko to, co miałem, oddałem wam.
 Hej, przyjaciele! Choć chwilę jedną.
 Znowu w życiu mi nie wyszło, znowu jestem sam.

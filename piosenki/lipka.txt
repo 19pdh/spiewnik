@@ -1,9 +1,9 @@
 .PIOSENKA "Lipka"
 
-Z tamtej strony jeziora
-stoi lipka zielona,
-a na tej lipce, na tej zieloniutkiej
-trzej ptaszkowie śpiewają.
+Z tamtej strony jeziora | e H7 e
+stoi lipka zielona, | G C H7
+a na tej lipce, na tej zieloniutkiej | G D e h
+trzej ptaszkowie śpiewają. | C H7 e
 
 Nie byli to ptaszkowie
 jeno trzej braciszkowie

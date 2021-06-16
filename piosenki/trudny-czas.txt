@@ -1,7 +1,7 @@
 .PIOSENKA "Trudny czas"
 
-O Panie Boże przywróć nam Polskę,
-bo przeżywamy trudny czas,
+O Panie Boże przywróć nam Polskę, | h A
+bo przeżywamy trudny czas, | D G A
 A nasze życie takie tułacze,
 łaskawie spojrzyj na nas choć raz
 Boże, jak ciężko w tym lesie siedzieć
@@ -9,10 +9,10 @@ i nie ma miejsca tu dla nas
 Kochany bracie i przyjacielu,
 nie wydawajcie proszę nas.
 
-        O Panie Boże przywróć nam Polskę,
+        O Panie Boże przywróć nam Polskę, | D A G A
         bo przeżywamy trudny czas,
         A nasze życie takie tułacze,
-        łaskawie spojrzyj na nas choć raz
+        łaskawie spojrzyj na nas choć raz | D A C G
 
 A matka płacze i ojciec nie wie
 że w okrążeniu jestem ja.

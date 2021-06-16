@@ -1,11 +1,11 @@
 .PIOSENKA "Majster bieda"
 
-Skąd przychodził, kto go znał
-Kto mu rękę podał kiedy
-Nad rowem siadał, wyjmował chleb
-Serem przekładał i dzielił się z psem
-Tyle wszystkiego, co sobą miał
-Majster Bieda
+Skąd przychodził, kto go znał | D G
+Kto mu rękę podał kiedy | D G A
+Nad rowem siadał, wyjmował chleb | D A
+Serem przekładał i dzielił się z psem | fis h
+Tyle wszystkiego, co sobą miał | A G fis e
+Majster Bieda | A D G fis
 
 Czapkę z głowy ściągał, gdy
 Wiatr gałęzie chylił drzewom

@@ -1,19 +1,19 @@
 .PIOSENKA "Bolero"
 
-W małym miasteczku
-Gdzieś na krańcach Hiszpanii
-Stary krawiec Augusto
-Szył bolera najtaniej
+W małym miasteczku | a
+Gdzieś na krańcach Hiszpanii | G
+Stary krawiec Augusto | F
+Szył bolera najtaniej | E
 I czy pan był bogaty
 Pan był biedny czy kmieć
 Każdy takie bolero
 Chciał mieć
 
-        To bolero
-        Dla bogatych cavaleros
-        W tym bolero będziesz senor
-        Prezentował się jak struś
-        Na bolero cavaleros ty się skuś
+        To bolero | a
+        Dla bogatych cavaleros | G
+        W tym bolero będziesz senor | F
+        Prezentował się jak struś | E
+        Na bolero cavaleros ty się skuś | F E
 
         Jakie chcesz pan bolero
         Białe, czarne, różowe

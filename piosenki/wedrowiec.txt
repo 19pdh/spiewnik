@@ -1,20 +1,16 @@
 .PIOSENKA "Wędrowiec"
 
-Nie oglądaj się za siebie
-Kiedy wstaje brzask
-Ruszaj dalej w świat
-Nie zatrzymuj się
-Sam wybierasz swoją drogę z wiatrem i pod wiatr
-Znasz tu każdy szlak
-Przestrzeń woła cię
+Nie oglądaj się za siebie kiedy wstaje brzask | d F
+Ruszaj dalej w świat nie zatrzymuj się | C g d
+Sam wybierasz swoją drogę z wiatrem czy pod wiatr | d F
+Znasz tu każdy szlak przestrzeń woła cię | C g d
 
         Przecież wiesz, że dla ciebie każdy nowy dzień
         Przecież wiesz, że dla ciebie chłodny lasu cień
         Przecież wiesz, jak upalna bywa letnia noc
         Przecież wiesz, że wędrowca los to jest twój los
 
-Lśni w oddali toń jeziora
-Słyszysz ptaków krzyk
+Lśni w oddali toń jeziora słyszysz ptaków krzyk
 Tu odpoczniesz dziś i nabierzesz sił
 Ale jutro znów wyruszysz na swój stary szlak
 Będziesz dalej szedł tam, gdzie pędzi wiatr

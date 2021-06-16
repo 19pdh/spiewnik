@@ -1,7 +1,7 @@
 .PIOSENKA "Tak jak ptaki"
 
-Straszny ból głośny krzyk
-Znowu życie utracono
+Straszny ból głośny krzyk | d F
+Znowu życie utracono | a G
 Zginął tak jak wielu z nich
 Za swą wolność upragnioną
 Miał na piersi szary krzyż

@@ -25,4 +25,6 @@ każdy z nas w coś wierzy czegoś chce
 broń mnie więc Boże bym którejś nocy nie zasnął
 gdy wróg pod murem mym przyczaji się
 
-.I "Ref: Czuwajcie..."
+.RS
+Czuwajcie...
+.RE

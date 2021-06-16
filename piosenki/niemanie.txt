@@ -1,6 +1,6 @@
 .PIOSENKA "Niemanie"
 
-Kolejny przedmiot wyrzucam
+Kolejny przedmiot wyrzucam | a e G D
 Rozstaję się z kolejną rzeczą
 mnie takie rzeczy leczą
 że rzeczy oknem lecą
