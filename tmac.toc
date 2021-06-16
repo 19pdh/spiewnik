@@ -4,18 +4,18 @@
 .	br
 .	mk
 .	nr toc.ll (\\n[.l]u-\w'\\*[toc.\\n[toc.i].name]')
-.	nr toc.ll (\\n[toc.ll]u-\w'\\n[toc.\\n[toc.i].num]')
+.	nr toc.ll (\\n[toc.ll]u-\w'\\n[toc.\\n[toc.i].num]'-2)
 .	ad l
 .	post.url "#toc.\\n[toc.i]" "\\*[toc.\\n[toc.i].name]"
-\v'-0em'\l'\\n[toc.ll]u.'
+\v'0em'\l'\\n[toc.ll]u.'
 .	br
-.	rt
+.\"	rt
 .	ad r
-.	br
-\\n[toc.\\n[toc.i].num]
+.\"	br
+\v'-1em'\\n[toc.\\n[toc.i].num]
 .	nr toc.i +1
 .	if !(\\n[toc.i]=\\n[toc.total]) \{\
-.   sp 0.5
+.   sp -0.1
 .		toc.gen \\n[toc.i]
 .	\}
 ..

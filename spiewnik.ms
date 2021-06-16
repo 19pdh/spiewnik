@@ -51,7 +51,7 @@
 Śpiewnik
 .ps
 .br
-.sp 32
+.sp 36
 Obóz Spore 2021
 .br
 .ad b
