@@ -9,14 +9,14 @@ Jeszcze w ustach uśpiony
 W Twoich włosach
 Jeszcze śpi wiosenny wiatr
 
-Jeśli chcesz
-Wypuść spod powiek wiosnę
-Wypuść błękit radosny
-W moje niebo
-Jeśli chcesz
-Niech motyle Twych słów
-Z ciepłych wyfruną ust
-W moje niebo
+        Jeśli chcesz
+        Wypuść spod powiek wiosnę
+        Wypuść błękit radosny
+        W moje niebo
+        Jeśli chcesz
+        Niech motyle Twych słów
+        Z ciepłych wyfruną ust
+        W moje niebo
 
 Jeszcze śpię
 W Twoje myśli wsłuchana
@@ -27,11 +27,11 @@ Bije przecież tak samo
 Jest tak Twoje
 Że go sama nie poznaję
 
-Jeśli chcesz
-Żeby snu nadszedł kres
-Jeśli dzień zbudzić chcesz
-W naszym niebie
-Przytul mnie
-Za oknami znów deszcz
-Lecz wiosennie nam jest
-W naszym niebie
+        Jeśli chcesz
+        Żeby snu nadszedł kres
+        Jeśli dzień zbudzić chcesz
+        W naszym niebie
+        Przytul mnie
+        Za oknami znów deszcz
+        Lecz wiosennie nam jest
+        W naszym niebie

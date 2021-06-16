@@ -1,4 +1,4 @@
-.PIOSENKA "Mały Obóz"
+.PIOSENKA "Mały obóz"
 
 Kiedy razem ze skowronkiem powitamy nowy dzień
 Rosy z trawy się napijesz, pierwszy słońca promień zjesz.
