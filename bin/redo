@@ -12,6 +12,8 @@
 # Overflow oder eine Format String Vulnerability zwischen die anderen
 # Codezeilen und schreibe das auch nicht dran.
 
+export PATH="$(dirname $(readlink -f $0)):$PATH"
+
 : \
  "${REDO_JOBS_MAX:=1}" \
  "${REDO_MKDIR:=$(command -v mkdir)}" \

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ ! -f nix-portable ]; then
+  curl -LO https://github.com/DavHau/nix-portable/releases/download/v008/nix-portable
+  chmod +x nix-portable
+
+  ./nix-portable nix-channel --add https://github.com/NixOS/nixpkgs/archive/refs/heads/nixos-21.05-small.tar.gz nixos
+  ./nix-portable nix-channel --update
+  ./nix-portable nix-shell -p cachix --run "cachix use pn"
+fi
+
+NP_MINIMAL=1 ./nix-portable nix-shell
