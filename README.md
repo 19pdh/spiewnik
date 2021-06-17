@@ -19,9 +19,10 @@ Wszystkie pliki `*.do` - opisują kroki do wykonania aby wyrenderować PDF
 Piosenki w `piosenki/*.txt` - Pliki z tekstami piosenek
 
 ```
-index.ms.do => spiewnik.ps.do => spiewnik.pdf.do => all.do - stworzenie PDF'a
-                                      ||
-                                      ++=> print.do - stworzenie PDF'a gotowego do druku
+index.ms.do => spiewnik.idx.do => spiewnik.ps.do => spiewnik.pdf.do => all.do - stworzenie PDF'a
+               (generowanie spisu                         ||
+                  treści )                                ++=> print.do - stworzenie PDF'a gotowego do druku
+
 
         clean.do - usunięcie cache'u
 ```
