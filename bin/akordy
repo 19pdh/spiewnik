@@ -1,0 +1,19 @@
+#!/bin/sh
+## Skrypt wypisuje wszystkie akordy z plików txt w ./piosenki
+
+cat piosenki/*.txt | \
+
+ # Wyświetl tylko napis po znaku '|'
+  awk -F "|" '/|/ { print $2 }' | \
+
+  # Usuń linie zawierające 'kapo'
+  grep -v 'kapo' | \
+
+  # Zamień spacje na entery => każdy akord na osobnej linii
+  tr ' ' '\n' | \
+
+  # Usuń puste linie
+  grep '.' | \
+
+  sort | \
+  uniq
