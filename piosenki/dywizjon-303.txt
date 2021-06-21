@@ -1,16 +1,16 @@
 .PIOSENKA "Dywizjon 303"
 
-Jest czerwiec czterdziesty szósty, londyńska aleja Moll
-Pogoda jak zwykle angielska, niebo stalowe od chmur
-Czekamy w tłumie od rana, są flagi we wszystkich kolorach
-Nareszcie koniec tej wojny, przybyli król i królowa
+Jest czerwiec czterdziesty szósty, londyńska aleja Moll | a G D / d C G
+Pogoda jak zwykle angielska, niebo stalowe od chmur | a G D / d C G
+Czekamy w tłumie od rana, są flagi we wszystkich kolorach |      F a C / B d F
+Nareszcie koniec tej wojny, przybyli król i królowa | F a E / B d A
 Słychać już pomruk wozów z białą gwiazdą w kole
 Pewnie niedługo nasi się tam za zza zakrętu wyłonią
 Teraz idą Francuzi, śmieją się prężą pierś
 Ale my czekamy na naszych, zaraz tu będą też
 
-        Ciągle się o nich mówiło, gdy Londyn spowijał dym
-        Najwięcej szkopów trafili - Dywizjon 303
+        Ciągle się o nich mówiło, gdy Londyn spowijał dym | F a C d / B d F G
+        Najwięcej szkopów trafili - Dywizjon 303 | F a C G / B d F C
         Angielki za nimi szalały choć Londyn spowijał dym
         A oni na Polskę czekali - Dywizjon 303
 

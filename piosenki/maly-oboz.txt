@@ -1,9 +1,9 @@
 .PIOSENKA "Mały obóz"
 
-Kiedy razem ze skowronkiem powitamy nowy dzień
-Rosy z trawy się napijesz, pierwszy słońca promień zjesz.
-Potem wracać trzeba będzie, pożegnamy rzekę,las.
-Bądźcie zdrowi nasi bracia, bądźcie zdrowi, na nas czas.
+Kiedy razem ze skowronkiem powitamy nowy dzień | C e
+Rosy z trawy się napijesz, pierwszy słońca promień zjesz. | C C7 F
+Potem wracać trzeba będzie, pożegnamy rzekę, las. | f C a
+Bądźcie zdrowi nasi bracia, bądźcie zdrowi, na nas czas. | d G G7
 
 .RS
 Ustawimy mały obóz, bramę zbudujemy z serc,
