@@ -57,7 +57,7 @@
 .ps
 .br
 .sp 36
-Obóz Spore 2021
+Obóz Kubek 2021
 .br
 .ad b
 .bp
