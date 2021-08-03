@@ -1,34 +1,34 @@
 .PIOSENKA "Bieszczadzki trakt"
 
 Kiedy nadejdzie czas, zwabi nas ognia blask | G D C G
-na polanie, gdzie króluje zły. | e D G
+Na polanie, gdzie króluje zły. | e D G
 Gwiezdny pył w ogniu tym, łzy wyciśnie nam dym, | G D C G
-tańczą iskry z gwiazdami, a my: | D G
+Tańczą iskry z gwiazdami, a my: | D G
 
 .RS
-Śpiewajmy wszyscy w ten radosny, | C D G
-czas śpiewajmy razem ilu jest tu nas. | C D e
+Śpiewajmy wszyscy w ten radosny czas, | C D G
+Śpiewajmy razem ilu jest tu nas. | C D e
 Choć lata młode szybko płyną, wiemy, że | C D  G e
-nie starzejemy się! | C D G
+Nie starzejemy się! | C D G
 .RE
 
 W lesie, gdzie licho śpi,
-ma przygoda swe drzwi.
+Ma przygoda swe drzwi.
 Pójdźmy tam, gdzie na ścianie lasu lśnią
-oczy sów, wilcze kły,
-rykiem powietrze drży,
-tylko gwiazdy przyjazne dziś są.
+Oczy sów, wilcze kły,
+Rykiem powietrze drży,
+Tylko gwiazdy przyjazne dziś są.
 
 .RS
 Śpiewajmy wszyscy...
 .RE
 
 Dorzuć do ognia drew,
-w górę niech płynie śpiew.
+W górę niech płynie śpiew.
 Wiatr poniesie go w wilgotny świat.
 Każdy z nas o tym wie
--znowu spotkamy się,
-a połączy nas bieszczadzki trakt!
+Znowu spotkamy się,
+A połączy nas bieszczadzki trakt!
 
 .RS
 Śpiewajmy wszyscy...

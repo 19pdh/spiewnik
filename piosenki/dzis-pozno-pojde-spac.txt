@@ -37,7 +37,7 @@ To wszystko chyba nie jest sen
 
 .bp
 
-        Choć nie chcę budzić się, nie umiem spać
+        Choć nie chcę budzić się, nie umiem spać | F g C d
         Świat dziwny jest jak sen, a sen jak świat.
         Choć nie chcę budzić się, nie umiem spać
         Świat dziwny jest jak sen, a sen... jak świat.

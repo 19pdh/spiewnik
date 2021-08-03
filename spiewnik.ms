@@ -4,10 +4,10 @@
 .nr PS 11
 .vs 9
 .nr VS 9
-.ll 4.83i
-.nr LL 4.83i
-.po 0.5i
-.nr PO 0.5i
+.ll 4.53i
+.nr LL 4.53i
+.po 0.65i
+.nr PO 0.65i
 .nr HM 0.5i
 .nr FM 0.8i
 .fp - R NimbusRoman-Regular
