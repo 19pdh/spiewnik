@@ -1,10 +1,10 @@
 .PIOSENKA "Harcerskie ideały"
 
-Na ścianie masz kolekcje swoich barwnych wspomnień, | D A e
+Na ścianie masz kolekcję swoich barwnych wspomnień, | D A e
 Suszony kwiat, naszyjnik, wiersz i liść.
 Już tyle lat przypinasz szpilką na tej słomie,
 To wszystko co cenniejsze jest niż skarb.
-Po środku sam generał Robert Baden Powell,
+Pośrodku sam generał Robert Baden Powell,
 Rzeźbiony w drewnie, lilijki smukły kształt.
 Jest krzyża znak i orzeł biały jest w Koronie,
 A zaraz pod nim harcerskich dziesięć praw.
@@ -23,7 +23,7 @@ Niech twym bratem będzie każdy.
         I nieś ze sobą wieść,
         Że być harcerzem chcesz.
 
-A gdy spyta cie ktoś,
+A gdy spyta cię ktoś,
 Skąd ten krzyż na twej piersi,
 Z dumą odpowiesz mu,
 Taki mają najdzielniejsi.

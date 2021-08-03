@@ -1,7 +1,7 @@
 .PIOSENKA "Zostanie tyle gór"
 
 Zostanie tyle gór ile udźwignąłem na plecach | e C
-Zostanie tyle gór ile narysowało pióro | G D
+Zostanie tyle drzew ile narysowało pióro | G D
 
 Tak gotowym trzeba być
 Do każdej ludzkiej podróży
@@ -12,7 +12,7 @@ W starym lesie bukowym
 To jakbym wrócił do siebie
 Po prostu... wrócę do domu | D A
 
-Zostanie tyle gór ile udźwignąłem na plecah
+Zostanie tyle gór ile udźwignąłem na plecach
 Zostanie tyle drzew ile narysowało pióro
 
 I wszystko tam będzie jak w życiu
@@ -24,7 +24,7 @@ Tych co najbardziej kocham
 Może we śnie ukradkiem
 Zamienią... ze mną dwa słowa
 
-Zostanie tyle gór ile udźwignąłem na plecah
+Zostanie tyle gór ile udźwignąłem na plecach
 Zostanie tyle drzew ile narysowało pióro
 
 Będą leciały stadem liście
