@@ -32,8 +32,7 @@ Zdejmij ją Panie ze mnie, jeśli umrę podczas snu
 .RS
 Bo choć zaginął hełm i miecz
 Dla ciała żadna w niej ostoja
-To w końcu życia warta rzecz
-Zbroja
+To w końcu życia warta rzecz - Zbroja!
 .RE
 
 Wrzasnęli hasło "wojna", zbudzili hufce hord
@@ -42,16 +41,16 @@ Goreją świeże rany, hańbiona płonie twarz
 Lecz nam do obrony dany pamięci pancerz nasz
 
 .RS
-Choć, choć za ciosem pada cios
-I wróg posiłki śle w konwojach
-Nas przed upadkiem chroni wciąż
-Zbroja
+Choć, choć za ciosem pada cios | D G D
+I wróg posiłki śle w konwojach | a G
+Nas przed upadkiem chroni wciąż | a H7 e a
+Zbroja | e H7 e
 .RE
 
-Wywlekli pudła z blachy, natkali kul do luf
-I straszą sami w strachu, strzelają do ciał i słów
-Zabrońcie żyć wystrzałem, niech zatryumfuje gwałt
-Nad każdym wzejdzie ciałem pamięci żywej kształt
+Wywlekli pudła z blachy, natkali kul do luf | a D e C D e
+I straszą sami w strachu, strzelają do ciał i słów | a D a C D e
+Zabrońcie żyć wystrzałem, niech zatryumfuje gwałt | G e A Fis7 H
+Nad każdym wzejdzie ciałem pamięci żywej kształt | G Fis F e C D e
 
 .RS
 Choć słońce skrył bojowy gaz

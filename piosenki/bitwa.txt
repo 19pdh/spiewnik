@@ -1,12 +1,12 @@
 .PIOSENKA "Bitwa"
 
-Okręt nasz wpłynął w mgłę i fregaty dwie
-Popłynęły naszym kursem by nie zgubić się.
+Okręt nasz wpłynął w mgłę i fregaty dwie | a G F d
+Popłynęły naszym kursem by nie zgubić się. | a G C E
 Potem szkwał wypchnął nas poza mleczny pas
 I nikt wtedy nie przypuszczał, że fregaty śmierć nam niosą.
 
-        Ciepła krew poleje się strugami,
-        Wygra ten kto utrzyma ship.
+        Ciepła krew poleje się strugami, | C G a e
+        Wygra ten kto utrzyma ship. | F G a
         W huku dział ktoś przykryje się falami,
         Jak da Bóg ocalimy bryg.
 

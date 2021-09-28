@@ -1,19 +1,19 @@
 .PIOSENKA "Imperatyw"
 
-Będziemy szli nieprzerwanie
-w ulewie, skwarze, huraganie
-przez chwiejne mosty, grząskie bagna
-chaszcze, pustynie i mokradła
+Będziemy szli nieprzerwanie | e C7
+w ulewie, skwarze, huraganie | a7 G H7
+przez chwiejne mosty, grząskie bagna | G C G
+chaszcze, pustynie i mokradła | a7 G H7
 
-Będziemy szli przez zamiecie
-przez grudnie, marce, czerwce, sierpnie
-upalne lata, mroźne zimy
-będziemy szli - nie zawrócimy
+Będziemy szli przez zamiecie | e C7
+przez grudnie, marce, czerwce, sierpnie | a7 G H7
+upalne lata, mroźne zimy | C7 e
+będziemy szli - nie zawrócimy | a7 H7
 
-Z wiarą w następny zakręt drogi
-co znów okaże się nie ten
-w tajne przymierze z Panem Bogiem
-w naszego trudu jakiś sens
+Z wiarą w następny zakręt drogi | C G H7
+co znów okaże się nie ten | G C D
+w tajne przymierze z Panem Bogiem | C a7 H7
+w naszego trudu jakiś sens | e C7
 
 Będziemy szli bez wytchnienia
 upadający ze zmęczenia

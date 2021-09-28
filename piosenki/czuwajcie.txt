@@ -1,16 +1,16 @@
 .PIOSENKA Czuwajcie
 
-Strzegli obrońcy murów swego miasta
-codzień na murach przelewali krew
-stawali oko w oko z wrogiem ze słabością
-wróg był okrutny obiecał miastu rzeź
+Strzegli obrońcy murów swego miasta | a G
+codzień na murach przelewali krew | a G
+stawali oko w oko z wrogiem ze słabością | d E a
+wróg był okrutny obiecał miastu rzeź | d E a
 Zbudź się żołnierzu wstań do stu kartaczy
 cóż że to trzecia twego czuwania noc
 jeżeli nie chcesz na zabite dzieci patrzeć
 gotowy na odparcie wroga bądź
 
 .RS
-Czuwajcie w nocy czuwajcie w dzień
+Czuwajcie w nocy czuwajcie w dzień | a d E a
 nie dajcie wrogu bram miasta przejść
 czuwajcie we dnie czuwajcie w noc
 w naszym czuwaniu jest wielka moc

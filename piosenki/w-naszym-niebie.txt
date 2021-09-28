@@ -1,18 +1,18 @@
 .PIOSENKA "W naszym niebie"
 
-Jeszcze śpisz
-Za rzęsami schowana
-Błękit nieba
-Uwięziony w Twoich oczach
+Jeszcze śpisz | cis / h
+Za rzęsami schowana | E / D
+Błękit nieba | A /  G
+Uwięziony w Twoich oczach | fis / e
 Ciepły głos
 Jeszcze w ustach uśpiony
 W Twoich włosach
 Jeszcze śpi wiosenny wiatr
 
-        Jeśli chcesz
-        Wypuść spod powiek wiosnę
-        Wypuść błękit radosny
-        W moje niebo
+        Jeśli chcesz | A / G
+        Wypuść spod powiek wiosnę | E / D
+        Wypuść błękit radosny | cis / h
+        W moje niebo | H / A
         Jeśli chcesz
         Niech motyle Twych słów
         Z ciepłych wyfruną ust
@@ -31,7 +31,10 @@ Jest tak Twoje
         Żeby snu nadszedł kres
         Jeśli dzień zbudzić chcesz
         W naszym niebie
+.po 2.5i
+.sp -7
         Przytul mnie
         Za oknami znów deszcz
         Lecz wiosennie nam jest
         W naszym niebie
+.po

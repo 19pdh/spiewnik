@@ -34,9 +34,10 @@ w pogardzie mając każdy targ.
 .RS
 Za to, że wolnym chciałem być...
 .RE
+.sp 1
 
-Wstaje świt, opada mgła
-nadchodzi nowy piękny dzień.
+Wstaje świt, opada mgła | a d
+nadchodzi nowy piękny dzień. | a E
 Moja wolności przy mnie trwaj
 najbardziej teraz kocham cię.
 Ostatni nabój, krzyża znak
@@ -45,5 +46,14 @@ wybaczcie jeśli coś nie tak
 przez chwilę lufa chłodzi skroń.
 
 .RS
-Za to, że wolnym chciałem być...
+Za to, że wolnym chciałem być | a F
+ścigają mnie jak sfora psów | C G
+ci co na smyczy wolą żyć | a F
+i nie podniosą nigdy głów. | C G
+Moja wolności nie znał cię | a F
+żaden niewolnik, żaden pies. | C G
+Obroża dla nich zwykła rzecz | a d
+dla mojej szyi pętlą jest. | C G
+Dla mej wolności... | a d
+mojej wolności... | a E
 .RE
