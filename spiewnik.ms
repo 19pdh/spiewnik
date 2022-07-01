@@ -1,54 +1,4 @@
-.\" Page setup
-.pl 8.27i
-.ps 11
-.nr PS 11
-.vs 9
-.nr VS 9
-.ll 4.53i
-.nr LL 4.53i
-.po 0.65i
-.nr PO 0.65i
-.nr HM 0.5i
-.nr FM 0.8i
-.fp - R NimbusRoman-Regular
-.fp - B NimbusRoman-Bold
-.fp - I NimbusRoman-Italic
-.\" macros used for building the toc
-.so tmac.toc
-.ds toc.tl Spis treści
-.\" Change headings to work with toc
-.rn SH SH_
-.de SH
-.  ps +3
-.  B "\\$*"
-.  ps
-.	 toc.mark "\\$*"
-..
-.de blank
-.  nr blankreg +1
-.  sp 0.2
-.  if \\n[blankreg]>1 .sp 0.5
-..
-.blm blank
-.de C
-.  if \\n[blankreg] \{
-.    sp 0.6
-.    nr blankreg 0
-\}\c
-.I \v'-1.1em'\\$1\h'-\w'\\$1'u'\h'-42u'\v'1.1em'
-..
-.de PIOSENKA
-. SH "\\$*"
-..
-.
-.de AKORDY
-\\$1
-
-.sp -1.67
-\h'23'\\$2
-..
-.
-.ds CH
+.so macros.ms
 .ad c
 19 Poznańska Drużyna Harcerzy “Puszcza”
 .sp 16
@@ -56,13 +6,39 @@
 Śpiewnik
 .ps
 .br
-.sp 36
-Obóz Kubek 2021
+.sp 7
+.EPS naszywka.eps L 4c
+.sp 10
+Jezioro Nowowiejskie, 2022
 .br
 .ad b
 .bp
-.ds LF \v'-0.2i'\l'4.83i'
+
+.vs +5
+\v'0.7i'\fBDruhu!\fR
+.sp 5
+W twoich rękach leży śpiewnik Puszczy. Stworzyliśmy go, aby przy wspólnym śpiewie milej spędzać czas przy ognisku. Ale jest też drugi cel tego śpiewnika. Podczas ognisk (i nie tylko) będziesz mógł rozwijać swoje umiejętności artystyczne. Tak jak nie da się przeżyć życia tylko patrząc, tak nie można uczestniczyć w ognisku bez śpiewania. 
+
+Dlatego dajemy Ci wyzwanie: Ogniskowa Korona. Ten kto ją zdobędzie, ten tylko zazna pełnii magii harcerskiego ogniska.
+
+
+.vs
+.EPS sprawnosci.eps C 3000
+
+.sp 2
+.ad c
+.ft B
+Powodzenia!
+
+.ad b
+.ft
+
+.\"\v'0.5i'\h'2i'\D'l 0.83i 0'\D'l -0.1i -0.05i'\v'0.1i'\D'l 0.1i -0.05i'
+.bp
+
+.ds LF \v'-0.2i'\D'l 4.83i 0'
 .ds CF \v'1.5'%
+
 
 .so index.ms
 

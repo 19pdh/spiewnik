@@ -1,2 +1,2 @@
 redo-ifchange spiewnik.idx
-cat spiewnik.ms | soin | pic | tbl | eqn | roff -mpost -ms | post -pa5
+cat spiewnik.ms | neatroff -mpost -ms -meps | neatpost -pa5

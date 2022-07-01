@@ -1,1 +1,1 @@
-cat cover-back.tr | roff -mpost | post -pa5 | ps2pdf - -
+cat cover-back.tr | neatroff -mpost | neatpdf -pa5
