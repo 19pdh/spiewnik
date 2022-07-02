@@ -1,6 +1,48 @@
 %PDF-1.6
 
+3 0 obj
+<<
+  /Length 5
+>>
+stream
+BT
+ET
+endstream
+endobj
+
 4 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /Resources <<
+    /Font << >>
+  >>
+  /Contents 3 0 R
+>>
+endobj
+
+5 0 obj
+<<
+  /Length 5
+>>
+stream
+BT
+ET
+endstream
+endobj
+
+6 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /Resources <<
+    /Font << >>
+  >>
+  /Contents 5 0 R
+>>
+endobj
+
+8 0 obj
 <<
   /Filter /ASCIIHexDecode
   /Length 270394
@@ -3351,7 +3393,7 @@ BBC12087570F4C4D28C5059FC97C03F3F36CB09E4FE64E048CFC49A2E087B349C677ED562C3E5C8A
 endstream
 endobj
 
-5 0 obj
+9 0 obj
 <<
   /Type /FontDescriptor
   /FontName /NimbusRoman-Regular
@@ -3363,27 +3405,27 @@ endobj
   /CapHeight 100
   /Ascent 100
   /Descent 100
-  /FontFile 4 0 R
+  /FontFile 8 0 R
 >>
 endobj
 
-8 0 obj
+12 0 obj
 <<
   /Type /Annot
   /Subtype /Link
-  /Rect [72.00 259.80 225.90 270.80]
+  /Rect [72.00 229.80 225.90 240.80]
   /A << /S /URI /URI (https://github.com/19pdh/spiewnik) >>
 >>
 endobj
 
-9 0 obj
+13 0 obj
 <<
-  /Length 1243
+  /Length 1624
 >>
 stream
 BT
 /NimbusRoman-Regular.0 11 Tf
-1 0 0 1 72.00 370.00 Tm
+1 0 0 1 72.00 358.00 Tm
 [<1119> -254 <30> 27 <4f> 18 <5a4e41>] TJ
 /NimbusRoman-Regular.2 11 Tf
 [<36>] TJ
@@ -3393,13 +3435,13 @@ BT
 [<54>] TJ
 /NimbusRoman-Regular.0 11 Tf
 [<594e41> -254 <28> 9 <4152> 9 <4345525a59> -254 <68305553> 27 <5a435a4176>] TJ
-1 0 0 1 72.00 352.00 Tm
+1 0 0 1 72.00 340.00 Tm
 [<30> 27 <4f> 18 <5a4e41>] TJ
 /NimbusRoman-Regular.2 11 Tf
 [<36>] TJ
 /NimbusRoman-Regular.0 11 Tf
 [<0c> -254 <435a4552> -18 <57494543> -254 <12101212>] TJ
-1 0 0 1 72.00 316.00 Tm
+1 0 0 1 72.00 304.00 Tm
 [<2f505241> 36 <57> 36 <411a> -254 <30> 18 <41> 9 <54> -9 <52> -18 <594b> -254 <2e494544>] TJ
 /NimbusRoman-Regular.3 11 Tf
 [<52>] TJ
@@ -3409,23 +3451,35 @@ BT
 [<36>] TJ
 /NimbusRoman-Regular.0 11 Tf
 [<53> 18 <4b> -18 <49>] TJ
-1 0 0 1 72.00 298.00 Tm
+1 0 0 1 72.00 286.00 Tm
 [<254b> -9 <53> 9 <504552> -18 <54> -9 <595a41> -254 <4d555a59> 36 <435a4e411a> -254 <26> 9 <52414e434953> 27 <5a45> 9 <4b> -254 <2b> -18 <4945> 18 <4c4f4e> -254 <2b> -18 <4945> 18 <4c4953> 27 <5a45> 27 <57> 27 <53> 18 <4b> -18 <49>] TJ
-1 0 0 1 72.00 262.00 Tm
+1 0 0 1 72.00 268.00 Tm
+[<30> 27 <4f505241> 36 <574b> -18 <49> -254 <5445> 9 <4b> -9 <53> 9 <54>] TJ
+/NimbusRoman-Regular.2 11 Tf
+[<> 9 <41>] TJ
+/NimbusRoman-Regular.0 11 Tf
+[<> 36 <57> 18 <1a> -254 <34> 100 <594d4f> 9 <54455553> 27 <5a> -254 <2a>] TJ
+/NimbusRoman-Regular.2 11 Tf
+[<41>] TJ
+/NimbusRoman-Regular.3 11 Tf
+[<> 18 <52>] TJ
+/NimbusRoman-Regular.0 11 Tf
+[<5749414b>] TJ
+1 0 0 1 72.00 232.00 Tm
 [<4854> -9 <54> -9 <50531a0f> -18 <0f474954> -9 <485542> 18 <0e43> 9 <4f4d0f11195044480f53> 9 <504945> 27 <574e494b>] TJ
 ET
 endstream
 endobj
 
-10 0 obj
+14 0 obj
 <<
   /Type /Page
   /Parent 2 0 R
   /Resources <<
-    /Font << /NimbusRoman-Regular.0 3 0 R /NimbusRoman-Regular.2 6 0 R /NimbusRoman-Regular.3 7 0 R >>
+    /Font << /NimbusRoman-Regular.0 7 0 R /NimbusRoman-Regular.2 10 0 R /NimbusRoman-Regular.3 11 0 R >>
   >>
-  /Contents 9 0 R
-  /Annots [ 8 0 R ]
+  /Contents 13 0 R
+  /Annots [ 12 0 R ]
 >>
 endobj
 
@@ -3433,8 +3487,8 @@ endobj
 <<
   /Type /Pages
   /MediaBox [ 0 0 420 595 ]
-  /Count 1
-  /Kids [ 10 0 R ]
+  /Count 3
+  /Kids [ 4 0 R 6 0 R 14 0 R ]
 >>
 endobj
 
@@ -3445,50 +3499,10 @@ endobj
 >>
 endobj
 
-11 0 obj
+15 0 obj
 <<
   /Type /Encoding
   /Differences [ 12 /comma /hyphen /period /slash /zero /one /two /three /four /five /six /seven /eight /nine /colon /semicolon /less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K /L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore /quoteleft /a /b /c /d /e /f /g /h /i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar /braceright /asciitilde /exclamdown /cent /sterling /fraction /yen /florin /section /currency /quotesingle /quotedblleft /guillemotleft /guilsinglleft /guilsinglright /fi /fl /endash /dagger /daggerdbl /periodcentered /paragraph /bullet /quotesinglbase /quotedblbase /quotedblright ]
->>
-endobj
-
-3 0 obj
-<<
-  /Type /Font
-  /Subtype /Type1
-  /BaseFont /NimbusRoman-Regular
-  /FirstChar 12
-  /LastChar 118
-  /Widths [ 250 330 250 280 500 500 500 500 500 500 500 500 500 500 280 280 560 560 560 440 920 720 670 670 720 610 560 720 720 330 390 720 610 890 720 720 560 720 670 560 610 720 720 940 720 720 610 330 280 330 470 500 330 440 500 440 500 440 330 500 500 280 280 500 280 780 500 500 500 500 330 390 280 500 500 720 500 500 440 480 200 480 540 330 500 500 170 500 500 500 500 180 440 500 330 330 560 560 500 500 500 250 450 350 330 440 440 ]
-  /FontDescriptor 5 0 R
-  /Encoding 11 0 R
->>
-endobj
-
-12 0 obj
-<<
-  /Type /Encoding
-  /Differences [ 54 /nacute ]
->>
-endobj
-
-6 0 obj
-<<
-  /Type /Font
-  /Subtype /Type1
-  /BaseFont /NimbusRoman-Regular
-  /FirstChar 54
-  /LastChar 54
-  /Widths [ 500 ]
-  /FontDescriptor 5 0 R
-  /Encoding 12 0 R
->>
-endobj
-
-13 0 obj
-<<
-  /Type /Encoding
-  /Differences [ 82 /zacute /zcaron /zdotaccent ]
 >>
 endobj
 
@@ -3497,15 +3511,55 @@ endobj
   /Type /Font
   /Subtype /Type1
   /BaseFont /NimbusRoman-Regular
-  /FirstChar 82
-  /LastChar 84
-  /Widths [ 440 440 440 ]
-  /FontDescriptor 5 0 R
-  /Encoding 13 0 R
+  /FirstChar 12
+  /LastChar 118
+  /Widths [ 250 330 250 280 500 500 500 500 500 500 500 500 500 500 280 280 560 560 560 440 920 720 670 670 720 610 560 720 720 330 390 720 610 890 720 720 560 720 670 560 610 720 720 940 720 720 610 330 280 330 470 500 330 440 500 440 500 440 330 500 500 280 280 500 280 780 500 500 500 500 330 390 280 500 500 720 500 500 440 480 200 480 540 330 500 500 170 500 500 500 500 180 440 500 330 330 560 560 500 500 500 250 450 350 330 440 440 ]
+  /FontDescriptor 9 0 R
+  /Encoding 15 0 R
 >>
 endobj
 
-14 0 obj
+16 0 obj
+<<
+  /Type /Encoding
+  /Differences [ 54 /nacute /napostrophe /ncaron /ncommaaccent /ninesuperior /notelement /notequal /notsubset /nsuperior /ntilde /nu /oacute ]
+>>
+endobj
+
+10 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /NimbusRoman-Regular
+  /FirstChar 54
+  /LastChar 65
+  /Widths [ 500 600 500 500 300 1000 1000 1000 360 500 450 500 ]
+  /FontDescriptor 9 0 R
+  /Encoding 16 0 R
+>>
+endobj
+
+17 0 obj
+<<
+  /Type /Encoding
+  /Differences [ 82 /zacute /zcaron /zdotaccent ]
+>>
+endobj
+
+11 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /NimbusRoman-Regular
+  /FirstChar 82
+  /LastChar 84
+  /Widths [ 440 440 440 ]
+  /FontDescriptor 9 0 R
+  /Encoding 17 0 R
+>>
+endobj
+
+18 0 obj
 <<
   /Creator (Neatroff)
   /Producer (Neatpost)
@@ -3513,28 +3567,32 @@ endobj
 endobj
 
 xref
-0 15
+0 19
 0000000000 65535 f 
-0000272533 00000 n 
-0000272438 00000 n 
-0000273322 00000 n 
+0000273260 00000 n 
+0000273153 00000 n 
 0000000010 00000 n 
-0000270532 00000 n 
-0000273997 00000 n 
-0000274267 00000 n 
-0000270774 00000 n 
-0000270925 00000 n 
-0000272223 00000 n 
-0000272587 00000 n 
-0000273926 00000 n 
-0000274176 00000 n 
-0000274454 00000 n 
+0000000067 00000 n 
+0000000174 00000 n 
+0000000231 00000 n 
+0000274049 00000 n 
+0000000338 00000 n 
+0000270860 00000 n 
+0000274837 00000 n 
+0000275155 00000 n 
+0000271102 00000 n 
+0000271254 00000 n 
+0000272934 00000 n 
+0000273314 00000 n 
+0000274653 00000 n 
+0000275064 00000 n 
+0000275343 00000 n 
 trailer
 <<
-  /Size 15
+  /Size 19
   /Root 1 0 R
-  /Info 14 0 R
+  /Info 18 0 R
 >>
 startxref
-274522
+275411
 %%EOF

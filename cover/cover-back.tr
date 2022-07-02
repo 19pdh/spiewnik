@@ -2,6 +2,13 @@
 .ps 11
 .ll 4.53i
 .po 1i
+
+.\" TODO: auto page padding
+
+.bp
+
+.bp
+
 .
 .fp - R NimbusRoman-Regular
 .sp 3i
@@ -15,6 +22,8 @@ Poznań, czerwiec 2022
 Oprawa: Patryk Niedźwiedziński
 
 Ekspertyza muzyczna: Franciszek Kielon Kieliszewski
+
+Poprawki tekstów: Tymoteusz Jóźwiak
 
 
 
