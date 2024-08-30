@@ -1,4 +1,4 @@
-.PIOSENKA "Bolero"
+Bolero
 
 W małym miasteczku | a
 Gdzieś na krańcach Hiszpanii | G

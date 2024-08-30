@@ -1,4 +1,4 @@
-.PIOSENKA "Bieszczadzkie anioły"
+Bieszczadzkie anioły
 
 Anioły są takie ciche | a
 Zwłaszcza te w Bieszczadach | G
@@ -18,12 +18,12 @@ Nawet karty mają zielone
 Zielone mają pojęcie
 A nawet zielony kielonek
 
-.RS
+
 Anioły bieszczadzkie, bieszczadzkie anioły | C G a
 Dużo w Was radości i dobrej pogody | C G a
 Bieszczadzkie anioły, anioły bieszczadzkie | C G a
 Gdy skrzydłem Cię dotkną już jesteś ich bratem | C G a
-.RE
+
 
 Anioły są całkiem samotne
 Zwłaszcza te w Bieszczadach
@@ -34,9 +34,9 @@ Zapomni dokąd ma lecieć
 I wtedy całe Bieszczady
 Mają szaloną uciechę
 
-.RS
+
 Anioły bieszczadzkie...
-.RE
+
 
 Anioły są wiecznie ulotne | a
 Zwłaszcza te w Bieszczadach | G

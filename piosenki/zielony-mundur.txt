@@ -1,4 +1,4 @@
-.PIOSENKA "Zielony mundur"
+Zielony mundur
 
 Dawno minął czas tych dziecięcych zabaw, | G e C D
 Z krótkich spodni już wyrósł każdy z nas.
@@ -9,10 +9,10 @@ O zdrowiu, o książkach - pomyśleć strach.
 O piciu, paleniu i złym zachowaniu,
 Posłuchasz, pomyślisz i westchniesz tak...
 
-.RS
+
 Ach, jak bardzo chciałbym mieć, zielony mundur swój
 i plecak też, ze stelażem połamanym jak drut.
-.RE
+
 
 Byłeś jeszcze zuchem, gdy dostałeś mundur,
 Trochę później plecak - minął czasu szmat.
@@ -23,9 +23,9 @@ Twą drogę wyznaczał kolorowy szlak.
 Z przygodą, piosenką i czapką na bakier,
 Odkrywał wciąż będziesz jakiś nowy świat...
 
-.RS
+
 Ach, jak bardzo...
-.RE
+
 
 Nie ma na co czekać, nie ma co rozważać.
 Po co dłużej zwlekać? Jaki problem masz?
@@ -36,6 +36,6 @@ Twą drogę wyznaczy kolorowy szlak.
 Z przygodą, piosenką i czapką na bakier,
 Odkrywał wciąż będziesz jakiś nowy świat...
 
-.RS
+
 Ach, jak bardzo...
-.RE
+

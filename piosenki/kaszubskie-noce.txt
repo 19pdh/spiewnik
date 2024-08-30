@@ -1,4 +1,4 @@
-.PIOSENKA "Kaszubskie noce"
+Kaszubskie noce
 
 Kaszubskie noce nad nami śniące, | C G
 harcerski krąg, ogniska blask | d G

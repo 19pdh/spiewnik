@@ -1,4 +1,4 @@
-.PIOSENKA "Wigwam"
+Wigwam
 
 Gdy przewieją nas już wszystkie zimne wiatry | fis A
 Gdy przemoczą nas do nitki wszystkie deszcze | fis A

@@ -1,4 +1,4 @@
-.PIOSENKA "Komendant"
+Komendant
 
 Na polanie dogasa ognisko | d
 Cicho w locie srebrzyste mrą skry | A7

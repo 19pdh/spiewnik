@@ -1,4 +1,4 @@
-.PIOSENKA Czuwajcie
+Czuwajcie
 
 Strzegli obrońcy murów swego miasta | a G
 codzień na murach przelewali krew | a G
@@ -9,12 +9,12 @@ cóż że to trzecia twego czuwania noc
 jeżeli nie chcesz na zabite dzieci patrzeć
 gotowy na odparcie wroga bądź
 
-.RS
+
 Czuwajcie w nocy czuwajcie w dzień | a d E a
 nie dajcie wrogu bram miasta przejść
 czuwajcie we dnie czuwajcie w noc
 w naszym czuwaniu jest wielka moc
-.RE
+
 
 Dzisiaj patrząc na miasta stare mury
 szukasz na cegłach śladów krwawych dni
@@ -25,6 +25,6 @@ każdy z nas w coś wierzy czegoś chce
 broń mnie więc Boże bym którejś nocy nie zasnął
 gdy wróg pod murem mym przyczaji się
 
-.RS
+
 Czuwajcie...
-.RE
+

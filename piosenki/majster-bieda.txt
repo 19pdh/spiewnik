@@ -1,4 +1,4 @@
-.PIOSENKA "Majster bieda"
+Majster bieda
 
 Skąd przychodził, kto go znał | D G
 Kto mu rękę podał kiedy | D G A

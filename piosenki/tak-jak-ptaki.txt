@@ -1,4 +1,4 @@
-.PIOSENKA "Tak jak ptaki"
+Tak jak ptaki
 
 Straszny ból głośny krzyk | d F
 Znowu życie utracono | a G

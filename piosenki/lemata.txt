@@ -1,4 +1,4 @@
-.PIOSENKA "Łemata"
+Łemata
 
 Pamiętam, tylko tabun chmur się rozwinął | C G a e
 I cichy wiatr wiejący ku połoninom | F C G F G

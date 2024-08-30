@@ -1,4 +1,4 @@
-.PIOSENKA "Ostatnia kula"
+Ostatnia kula
 
 Zapadam w ciemność i las | a d
 to moje życie, to mój dom | a E
@@ -9,7 +9,7 @@ a nogi nie chcą nosić mnie.
 Domyka się obławy krąg
 do rana sam wykrwawię się.
 
-.RS
+
 Za to, że wolnym chciałem być | a F
 ścigają mnie jak sfora psów | C G
 ci co na smyczy wolą żyć | a F
@@ -20,7 +20,7 @@ Obroża dla nich zwykła rzecz | a d
 dla mojej szyi pętlą jest. | C G
 Dla mej wolności... | a d
 mojej wolności... | a E
-.RE
+
 
 Tylu przyjaciół przeszło już
 na drugą stronę, w lepszy świat
@@ -31,9 +31,9 @@ przed Bogiem tylko chyląc kark.
 Pośród klęczących dumnie szli
 w pogardzie mając każdy targ.
 
-.RS
+
 Za to, że wolnym chciałem być...
-.RE
+
 .sp 1
 
 Wstaje świt, opada mgła | a d
@@ -45,7 +45,7 @@ burzy się krew, szczęknęła broń,
 wybaczcie jeśli coś nie tak
 przez chwilę lufa chłodzi skroń.
 
-.RS
+
 Za to, że wolnym chciałem być | a F
 ścigają mnie jak sfora psów | C G
 ci co na smyczy wolą żyć | a F
@@ -56,4 +56,4 @@ Obroża dla nich zwykła rzecz | a d
 dla mojej szyi pętlą jest. | C G
 Dla mej wolności... | a d
 mojej wolności... | a E
-.RE
+

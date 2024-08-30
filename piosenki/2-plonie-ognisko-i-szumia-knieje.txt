@@ -1,37 +1,37 @@
-.PIOSENKA "Płonie ognisko i szumią knieje"
+Płonie ognisko i szumią knieje
 
 Płonie ognisko i szumią knieje | d A d
 Drużynowy jest wśród nas. | A A7 d A
 Opowiada starodawne dzieje, | d A d
 Bohaterski wskrzesza czas. | g A d C
 
-.RS
+
 O rycerstwie spod kresowych stanic, | F C
 O obrońcach naszych polskich granic, | A7 d A
 A ponad nami wiatr szumny wieje, | d A d
 I dębowy huczy las. | g A7 d
-.RE
+
 
 Już do odwrotu głos trąbki wzywa,
 Alarmując ze wszech stron.
 Wstaje wiara w ordynku szczęśliwa,
 Serca biją w zgodny ton.
 
-.RS
+
 Każda twarz się uniesieniem płoni,
 Każdy laskę krzepko dzierży w dłoni,
 A z młodzieńczej się piersi wyrywa,
 Pieśń potężna pieśń jak dzwon.
-.RE
+
 
 Zgasło ognisko i szumią knieje,
 Spojrzyj weń ostatni raz.
 Niech ci w duszy radośnie zanuci,
 Że na zawsze łączą nas:
 
-.RS
+
 Wspólne troski i radości życia,
 Serc harcerskich zjednoczone bicia.
 I ta przyjaźń najszczersza prawdziwa,
 Którą Bóg połączył nas.
-.RE
+

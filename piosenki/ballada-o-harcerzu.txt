@@ -1,4 +1,4 @@
-.PIOSENKA "Ballada o harcerzu"
+Ballada o harcerzu
 
 Właśnie tu na tej ziemi, młody harcerz meldował | G D
 Swą gotowość umierać za Polskę. | C G
@@ -9,12 +9,12 @@ Brzozowymi krzyżami znaczonych,
 Swą dziewczynę pożegnał nic nie wiedząc, że tylko
 Kilka dni życia mu przeznaczonych.
 
-.RS
+
 Naszej ziemi śpiewajmy, ziemi pokłon składajmy | G D
 Taki prosty, serdeczny, harcerski. | C D G
 Niechaj echo poniesie tę balladę po lesie | G D
 W nowe jutro i przyszłość nową. | C D G
-.RE
+
 
 Na pomniku wyryto, że 16 miał wiosen,
 Że był śmiały, odważny, radosny.
@@ -25,6 +25,6 @@ Przetarł szlak, którym dzisiaj wędrujesz
 Kiedy tak przy ognisku śpiewasz sobie balladę,
 W sercu tak jak on ojczyznę czujesz.
 
-.RS
+
 Naszej ziemi śpiewajmy, ziemi pokłon składajmy...
-.RE
+

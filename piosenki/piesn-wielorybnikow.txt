@@ -1,4 +1,4 @@
-.PIOSENKA "Pieśń wielorybników"
+Pieśń wielorybników
 
 Nasz “Diament” prawie gotów już | a e
 W cieśninach nie ma kry | a e

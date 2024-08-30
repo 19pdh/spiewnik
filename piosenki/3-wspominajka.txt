@@ -1,4 +1,4 @@
-.PIOSENKA Wspominajka
+Wspominajka
 
 Już niedługo nie starczy palcy u rąk, | C F
 by policzyć obozy, na których już byłeś. | a G
@@ -7,14 +7,14 @@ innym razem, że chciałbyś tak wciąż. | F G
 Dzisiaj przyda się poczynić mały bilans tych, | a e
 niezapomnianych dni... | F G
 
-.RS
+
 Mniejsza już o imiona jezior i wsi,
 każde z nich przypomina nastroje i twarze.
 Nie wiesz czemu pamiętasz motyla w słońcu,
 a nie to, jak wyglądały dni.
 Najpierw, gdy myślałes, że sznur szary najgorszy,
 potem, gdy chciałeś go mieć...
-.RE
+
 
 Lata biegną prędko, aż zapiera dech,
 granatowa chusta już prawie jest biała.

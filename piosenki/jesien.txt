@@ -1,4 +1,4 @@
-.PIOSENKA "Jesień"
+Jesień
 
 Jesień już w polach mgła kosmata | G h C D
 Jesień, zabrała resztki lata | G h C D
@@ -11,12 +11,12 @@ Nie odrzucę przecież wspomnień
 Gdy nie wróci lato do mnie
 To na które czekam znów
 
-.RS
+
 Na to lato, które z wiatrem w polu gna | C D G e
 Na to lato, co niebieskie oczy ma | C D G e
 Na to lato, gdzie na przemian deszcz i skwar | C D G e
 Na te noce, gdy ogniska gaśnie żar | C H7
-.RE
+
 
 Jesień, na dworze wiatr i słota
 Jesień, a w sercu żal, tęsknota
@@ -24,9 +24,9 @@ Już październik minął wrzesień
 Już listopad licho niesie
 A w plecaku pusto już.
 
-.RS
+
 Na to lato...
-.RE
+
 
 Jesień a po niej przyjdzie zima
 Jesień, nic mnie już nie zatrzyma
@@ -34,6 +34,6 @@ Ale wiosną wrócisz z nami na te szlaki
 Gdzie ścieżkami biegniesz
 By przywitać znów.
 
-.RS
+
 Tamto lato...
-.RE
+

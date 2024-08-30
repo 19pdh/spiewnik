@@ -1,4 +1,4 @@
-.PIOSENKA "Bitwa"
+Bitwa
 
 Okręt nasz wpłynął w mgłę i fregaty dwie | a G F d
 Popłynęły naszym kursem by nie zgubić się. | a G C E

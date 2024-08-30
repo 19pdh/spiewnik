@@ -1,4 +1,4 @@
-.PIOSENKA "Dalej wesoło"
+Dalej wesoło
 
 Dalej, wesoło niech popłynie gromki śpiew, | G G7
 Niech stutysięcznym echem zabrzmi pośród drzew, | C G

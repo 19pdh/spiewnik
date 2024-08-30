@@ -1,4 +1,4 @@
-.PIOSENKA "Dziś późno pójdę spać"
+Dziś późno pójdę spać
 
 Dziś późno pójdę spać | a
 Gdy wszyscy będą w łóżkach | d

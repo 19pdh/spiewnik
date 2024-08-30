@@ -1,4 +1,4 @@
-.PIOSENKA "Jesień idzie"
+Jesień idzie
 
 Raz staruszek, spacerując w lesie, | a D7 a D7
 Ujrzał listek przywiędły i blady | a D7 E7

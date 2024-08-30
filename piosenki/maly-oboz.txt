@@ -1,16 +1,16 @@
-.PIOSENKA "Mały obóz"
+Mały obóz
 
 Kiedy razem ze skowronkiem powitamy nowy dzień | C e
 Rosy z trawy się napijesz, pierwszy słońca promień zjesz. | C C7 F
 Potem wracać trzeba będzie, pożegnamy rzekę, las. | f C a
 Bądźcie zdrowi nasi bracia, bądźcie zdrowi, na nas czas. | d G G7
 
-.RS
+
 Ustawimy mały obóz, bramę zbudujemy z serc,
 A z tych dusz co tak gorące zbudujemy sobie piec.
 Rozpalimy mały ogień, a w tym ogniu będziesz piekł
 Naszą przyjaźń która łączy, która da ci to co chcesz.
-.RE
+
 
 My kiedyś powrócimy, nie za rok no to za dwa
 Więc dlaczego płacze rzeka, a więc czemu szumi las.

@@ -1,4 +1,4 @@
-.PIOSENKA "Hej w góry!"
+Hej w góry!
 
 Zagrajcie nam - może się cofnie czas, | C d
 Do tamtych dni naszych marzeń, | F C G

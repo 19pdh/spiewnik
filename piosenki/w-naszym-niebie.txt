@@ -1,4 +1,4 @@
-.PIOSENKA "W naszym niebie"
+W naszym niebie
 
 Jeszcze śpisz | cis / h
 Za rzęsami schowana | E / D
@@ -31,10 +31,7 @@ Jest tak Twoje
         Żeby snu nadszedł kres
         Jeśli dzień zbudzić chcesz
         W naszym niebie
-.po 2.5i
-.sp -7
         Przytul mnie
         Za oknami znów deszcz
         Lecz wiosennie nam jest
         W naszym niebie
-.po

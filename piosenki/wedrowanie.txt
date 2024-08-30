@@ -1,25 +1,25 @@
-.PIOSENKA Wędrowanie
+Wędrowanie
 
 Rozwichrzone nad głową sosny rosochate, | a d E a
 Biegną niebem chmurki, owieczki skrzydlate, | a d G C
 Senne oko jeziora, zda się, na wpół drzemie, | C d G C E
 Kolorowe sady słodkie niosą brzemię. | a d E a
 
-.RS
+
 A nam czegóż to więcej potrzeba? | C G F C
 Po \(em wiedz nam! | a E a
 Powiedz nam lesie i drogo piaszczysta, | C G F C
 Powiedz, powiedz, nam. (bis) | a E a
-.RE
+
 
 Połoniny zielone, przepastne doliny,
 Ukwiecone łąki, strojne jak dziewczyny,
 Płaczka wierzba przysiada na przydrożnym rowie,
 Matka żegnająca ruszających w drogę.
 
-.RS
+
 Przemierzamy drożyny jak wędrowne ptaki,
 Co na niebie kluczem wyznaczają szlaki.
 Dokąd, dokąd tak pędzisz, uskrzydlony bracie?
 Pędzisz nie bez celu, już we krwi to macie.
-.RE
+

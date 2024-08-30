@@ -1,4 +1,4 @@
-.PIOSENKA "Ballada o Krzyżowcu"
+Ballada o Krzyżowcu
 
 Wolniej, wolniej, wstrzymaj konia | e
 Dokąd pędzisz w stal odziany | A
