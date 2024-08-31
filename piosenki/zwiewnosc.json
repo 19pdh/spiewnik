@@ -1,0 +1,48 @@
+{
+    "title": "Zwiewność",
+    "hid_titles": [],
+    "text_authors": [
+        "Bolesław Leśmian"
+    ],
+    "composers": [],
+    "performers": [
+        "Bez Jacka"
+    ],
+    "release_date": null,
+    "show_rel_date_month": true,
+    "show_rel_date_day": true,
+    "yt_link": "www.youtube.com/watch?v=CtWLUzkj3iw",
+    "add_pers": [],
+    "tags": [],
+    "refren": {
+        "text": "A jak dumnie się modrze u ciszy podnóża\nJak buńczucznie do boju z mgłą się napurpurza\nA jest go tak niewiele, że mniej niż niebiesko\nNic prócz tła, biały obłok z liliową przekreską",
+        "chords": "a\nG\nF\nE E7",
+        "shift": true
+    },
+    "parts": [
+        {
+            "text": "Brzęk muchy w pustym dzbanie co stoi na półce\nSmuga w oczach po znikłej za oknem jaskółce\nCień ręki na murawie a wszystko niczyje\nLedwo się zazieleni, już ufa, że żyje",
+            "chords": "a\nG\nF\nE E7",
+            "shift": false
+        },
+        {
+            "refren": 1
+        },
+        {
+            "text": "Dal światła w oczach wróbla, spotkanie traw z ciałem\nSzmery w studni, ja w lesie, mgłą byłeś bywałem\nUsta Twoje w alei, świt pod groblą we młynie\nNiebo w bramie na oścież, zgon pszczół w koniczynie",
+            "chords": "a\nG\nF\nE E7",
+            "shift": false
+        },
+        {
+            "refren": 1
+        },
+        {
+            "text": "Chód po ziemi człowieka co na widnokręgu\nMalejąc łatwo zwiewną gęstwę ciała niesie\nI w tej gęstwie się modli i gmatwa co chwila\nI wyziera z tej gęstwy w świat i na motyla",
+            "chords": "a\nG\nF\nE E7",
+            "shift": false
+        },
+        {
+            "refren": 1
+        }
+    ]
+}

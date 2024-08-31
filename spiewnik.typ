@@ -16,14 +16,16 @@
   text(size: 12pt)[#upper(it)]
 }
 #align(center + horizon)[
-
 #text(size: 2em, weight: "bold")[
   *ŚPIEWNIK*
 ]
 
-19 Poznański Szczep ZHR "Barć"
+żeby śpiewali
 
 ]
+
+//19 Poznański Szczep ZHR "Barć"
+
 #pagebreak(to: "even")
 
 #text(size: 1.3em)[
@@ -41,10 +43,10 @@ Dlatego dajemy Ci wyzwanie: Ogniskowa Korona. Ten kto ją zdobędzie, ten tylko 
 ]
 
 #include "piosenki/index.typ"
-#pagebreak()
+#pagebreak(weak: true)
 
 *Notatki*
-#for i in range(5) [#pagebreak()]
+#for i in range(2) [#pagebreak()]
 
 #align(center)[
   *SPIS TREŚCI*

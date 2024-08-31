@@ -1,0 +1,61 @@
+{
+    "title": "A my nie chcemy uciekać stąd",
+    "hid_titles": [],
+    "text_authors": [
+        "Jacek Kaczmarski"
+    ],
+    "composers": [
+        "Przemysław Gintrowski"
+    ],
+    "performers": [
+        "Przemysław Gintrowski"
+    ],
+    "release_date": "1980-03-01T00:00:00.000",
+    "show_rel_date_month": false,
+    "show_rel_date_day": false,
+    "yt_link": "www.youtube.com/watch?v=R-7cWBBUedg",
+    "add_pers": [],
+    "tags": [],
+    "parts": [
+        {
+            "text": "Stanął w ogniu nasz wielki dom\nDym w korytarzach kręci sznury\nJest głęboka naprawdę czarna noc\nZ piwnic płonące uciekają szczury",
+            "chords": "d",
+            "shift": false
+        },
+        {
+            "text": "Krzyczę przez okno, czoło w szybę wgniatam\nHaustem powietrza robię w żarze wyłom\nTen, co mnie słyszy, ma mnie za wariata\nWoła: \"Co jeszcze świrze Ci się śniło?\"",
+            "chords": "A B\nC d\nA B\nC d",
+            "shift": false
+        },
+        {
+            "text": "Więc chwytam kraty rozgrzane do białości\nTwarz swoją widzę, twarz w przekleństwach\nA obok sąsiad patrzy z ciekawością\nJak płonie na nim kaftan bezpieczeństwa",
+            "chords": "d B\na d\nd B\na d",
+            "shift": false
+        },
+        {
+            "text": "Dym w dziurce od klucza, a drzwi bez klamek\nPękają tynki wzdłuż spoconej ściany\nWsuwam swój język w rozpalony zamek\nŚmieje się za mną ktoś jak obłąkany",
+            "chords": "A B\nC d\nA B\nC d",
+            "shift": false
+        },
+        {
+            "text": "Lecz większość śpi nadal, przez sen się uśmiecha\nA kto się zbudzi nie wierzy w przebudzenie\nKrzyk w wytłumionych salach nie zna echa\nNa rusztach łóżek milczy przerażenie",
+            "chords": "d a C d\nB g a d\nd a C d\nB g a d",
+            "shift": false
+        },
+        {
+            "text": "Ci przywiązani dymem materaców\nPrzepowiadają życia swego słowa\nNam pod nogami żarzą się posadzki\nDeszcz iskier czerwony osiada na głowach",
+            "chords": "d a C d\nB g a d\nd a C d\nB g a d",
+            "shift": false
+        },
+        {
+            "text": "Dym coraz gęstszy, obcy ktoś się wdziera\nA my wciśnięci w najdalszy sali kąt\nTędy! - wrzeszczy - Niech Was jasna cholera\nA my nie chcemy uciekać stąd",
+            "chords": "d a C d\nB g a d\nd a C d\nB g a d",
+            "shift": false
+        },
+        {
+            "text": "A my nie chcemy uciekać stąd\nKrzyczymy w szale wściekłości i pokory\nStanął w ogniu nasz wielki dom\nDom dla psychicznie i nerwowo chorych",
+            "chords": "d a C d\nB g a d\nd a C d\nB g a d",
+            "shift": false
+        }
+    ]
+}

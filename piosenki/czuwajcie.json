@@ -1,0 +1,46 @@
+{
+    "title": "Czuwajcie",
+    "hid_titles": [],
+    "text_authors": [],
+    "composers": [],
+    "performers": [],
+    "release_date": null,
+    "show_rel_date_month": true,
+    "show_rel_date_day": true,
+    "yt_link": "https://www.youtube.com/watch?v=QEK_fiRROK4",
+    "add_pers": [],
+    "tags": [],
+    "refren": {
+        "text": "Czuwajcie w nocy, czuwajcie w dzień\nNie dajcie wrogom bram miasta przejść\nCzuwajcie we dnie, czuwajcie w noc\nW naszym czuwaniu tkwi wielka moc",
+        "chords": "a d E a\na d E a\na d E a\na d E a",
+        "shift": true
+    },
+    "parts": [
+        {
+            "text": "Strzegli obrońcy murów swego miasta\nCo dzień na murach przelewali krew\nStawali oko w oko z wrogiem, ze słabością\nWróg był okrutny, obiecał miastu rzeź",
+            "chords": "a G a\na G a\nd E a\nd E a",
+            "shift": false
+        },
+        {
+            "text": "Zbudź się żołnierzu stań do stu kartaczy\nCóź ze to trzecia czuwania twego noc\nJeżeli nie chcesz na zabite dzieci patrzeć\nGotowy na odparcie wroga badź",
+            "chords": "a G a\na G a\nd E a\nd E a",
+            "shift": false
+        },
+        {
+            "refren": 1
+        },
+        {
+            "text": "Dzisiaj patrząc na miasta stare mury\nSzukasz w pamięci śladu krwawych dni\nMyślisz że byłbyś tak dzielny jak żołnierz który\nBronił wolności i sam nie szczędził krwi",
+            "chords": "a G a\na G a\nd E a\nd E a",
+            "shift": false
+        },
+        {
+            "text": "Każdy ma swój warowny mur i miasto\nKażdy z nas w coś wierzy czegoś chce\nBroń mnie Boże bym którejś nocy nie zasnął\nGdy wróg pod murem mym przyczai się",
+            "chords": "a G a\na G a\nd E a\nd E a",
+            "shift": false
+        },
+        {
+            "refren": 1
+        }
+    ]
+}

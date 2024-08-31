@@ -1,0 +1,56 @@
+{
+    "title": "Źródło",
+    "hid_titles": [],
+    "text_authors": [
+        "Jacek Kaczmarski"
+    ],
+    "composers": [
+        "Jacek Kaczmarski"
+    ],
+    "performers": [
+        "Jacek Kaczmarski"
+    ],
+    "release_date": null,
+    "show_rel_date_month": true,
+    "show_rel_date_day": true,
+    "yt_link": "www.youtube.com/watch?v=PIukUuanBSc",
+    "add_pers": [],
+    "tags": [],
+    "parts": [
+        {
+            "text": "Płynie rzeka wąwozem, jak dnem koleiny\nKtóra sama siebie żłobiła\nRosną ściany wąwozu, z obu stron coraz wyżej\nTam na gorze są ponoć równiny\nI im więcej tej wody, tym się głębiej potoczy\nSama biorąc na siebie cień zboczy",
+            "chords": "e\ne\nC\nC D G\na e\nC H7",
+            "shift": false
+        },
+        {
+            "text": "Piach spod nurtu ucieka, nurt po piachu się wije\nWłasną w czeluść ciągnie go siła\nAle jest ciągle rzeka na dnie tej rozpadliny\nJest i będzie, będzie jak była\nBo źródło bo źródło\nWciąż bije",
+            "chords": "e\ne\nC\nC D G\ne a\nC H7\n(e e9 H)",
+            "shift": false
+        },
+        {
+            "text": "A na ścianach wysokich pasy barw i wyżłobień\nTej rzeki historia, tych brzegów\nCienie drzew powalonych, ślady głazów rozmytych\nMuł zgarnięty pod siebie, wbrew sobie\nA hen, w dole blask nikły ciągle ziemię rozcina\nZiemia nad nim się zrastać zaczyna",
+            "chords": "e\ne\nC\nC D G\na e\nC H7",
+            "shift": false
+        },
+        {
+            "text": "Z obu stron żwir i glina, by zatrzymać go w biegu\nWoda syczy i wchłania, lecz żyje\nI zakręca, omija, wsiąka, wspina się, pieni\nAle płynie, wciąż płynie wbrew brzegom\nBo źródło bo źródło\nWciąż bije",
+            "chords": "e\ne\nC\nC D G\ne a\nC H7\n(e e9 H)",
+            "shift": false
+        },
+        {
+            "text": "I są miejsca gdzie w szlamie woda niemal zastygła\nPod kożuchem brudnej zieleni\nTam ślad, prędzej niż ten kto zostawił go, znika\nNiewidoczne bagienne są sidła\nAle źródło wciąż bije, tłoczy puls miedzy stoki\nWiec jest nurt, choć ukryty dla oka",
+            "chords": "e\ne\nC\nC D G\na e\nC H7",
+            "shift": false
+        },
+        {
+            "text": "Nieba prawie nie widać, czeluść chłodna i ciemna\nNiech się sypią lawiny kamieni\nI niech łączą się zbocza bezlitosnych wąwozów\nBo cóż drąży kształt przyszłych przestrzeni\nJak nie rzeka podziemna?",
+            "chords": "e\ne\na e\na e\nC H7",
+            "shift": false
+        },
+        {
+            "text": "Groty w skalach wypłucze\nŻyły złote odkryje\nBo źródło\nBo źródło\nWciąż bije",
+            "chords": "a\ne\ne\na\nC e7 H",
+            "shift": false
+        }
+    ]
+}
